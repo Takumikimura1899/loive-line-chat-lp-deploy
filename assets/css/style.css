@@ -7,7 +7,7 @@
 
 html {
   min-width: 375px;
-  max-width: 375px; /* TODO: 500px に戻すの忘れず */
+  max-width: 500px;
   margin: 0 auto;
   background-color: #000;
 }
@@ -46,6 +46,10 @@ body {
 .chat-list-item {
   display: flex;
   gap: 8px;
+
+  div {
+    flex-grow:1;
+  }
 }
 
 .chat-message-container {
