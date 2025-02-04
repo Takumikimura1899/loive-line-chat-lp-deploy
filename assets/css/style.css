@@ -3,6 +3,7 @@
   --color-white: #fff;
   --color-light-blue: #a8c1ed;
   --color-orange: #f81;
+  --color-orange-text: #ff831c;
 }
 
 html {
@@ -145,5 +146,43 @@ body {
   .image2 {
     width: 91.5%;
     margin: auto auto 15%;
+  }
+}
+
+.section-what-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .image {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+  }
+
+  .title-container {
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .explanation {
+    width: 89%;
+    margin: auto auto 20%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-orange-text);
+    text-align: justify;
+    text-justify: auto;
+    background: #000;
   }
 }
