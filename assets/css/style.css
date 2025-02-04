@@ -48,7 +48,7 @@ body {
   gap: 8px;
 
   div {
-    flex-grow:1;
+    flex-grow: 1;
   }
 }
 
@@ -131,7 +131,6 @@ body {
   transform: translate(-50%, -90%);
 }
 
-
 .section-result-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -144,9 +143,7 @@ body {
   }
 
   .image2 {
-    margin: auto auto 15%;
     width: 91.5%;
+    margin: auto auto 15%;
   }
 }
-
-
