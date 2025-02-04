@@ -130,3 +130,23 @@ body {
   left: 50%;
   transform: translate(-50%, -90%);
 }
+
+
+.section-result-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .image {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+  }
+
+  .image2 {
+    margin: auto auto 15%;
+    width: 91.5%;
+  }
+}
+
+
