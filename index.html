@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -19,31 +19,81 @@
     <header class="header">
       <h1 class="header-title">フィットネスアドバイザー</h1>
     </header>
-    <ul>
-      <li class="chat-wrapper">
-        <img src="assets/img/advisor.webp" alt="アドバイザーのアイコン" width="44" height="44" />
-        <div class="speech-bubble">
-          <p class="chat-text">こんにちは！フィットネスアドバイザーのライフです！</p>
-        </div>
-      </li>
-      <li class="chat-wrapper">
-        <img src="assets/img/advisor.webp" alt="アドバイザーのアイコン" width="44" height="44" />
-        <div class="speech-bubble">
-          <p>
-            運動したいけどどこがいいんだろう…？悩むあなたにぴったりなフィットネスをご紹介しますので、簡単なカウンセリングにご協力ください☺️
-          </p>
-        </div>
-      </li>
-      <li class="chat-wrapper">
-        <img src="assets/img/advisor.webp" alt="アドバイザーのアイコン" width="44" height="44" />
-        <div class="speech-bubble">
-          <span>Q1</span>
-          <h2>フィットネスを始める目的はなんですか？</h2>
-          <button>リフレッシュ・健康維持</button>
-          <button>体を引き締めたい</button>
-        </div>
-      </li>
-    </ul>
+
+    <section>
+      <div class="chat-wrapper">
+        <ul class="chat-list">
+          <li class="chat-list-item">
+            <img
+              src="assets/img/advisor.webp"
+              alt="アドバイザーのアイコン"
+              width="44"
+              height="44"
+            />
+            <div class="chat-message-container">
+              <p class="chat-message-text">こんにちは！フィットネスアドバイザーのライフです！</p>
+            </div>
+          </li>
+          <li class="chat-list-item">
+            <img
+              src="assets/img/advisor.webp"
+              alt="アドバイザーのアイコン"
+              width="44"
+              height="44"
+            />
+            <div class="chat-message-container">
+              <p class="chat-message-text">
+                運動したいけどどこがいいんだろう…？
+                <br />
+                悩むあなたにぴったりなフィットネスをご紹介しますので、
+                <br />
+                簡単なカウンセリングにご協力ください☺️
+              </p>
+            </div>
+          </li>
+          <li class="chat-list-item">
+            <img
+              src="assets/img/advisor.webp"
+              alt="アドバイザーのアイコン"
+              width="44"
+              height="44"
+            />
+            <div class="chat-question-container">
+              <div class="chat-question-container-header">
+                <h2 class="chat-question-header-title">Q1</h2>
+              </div>
+              <div class="chat-question-container-body">
+                <h3 class="chat-message-text">フィットネスを始める目的はなんですか？</h3>
+                <div class="chat-question-button-area">
+                  <button class="chat-question-button">リフレッシュ・健康維持</button>
+                  <button class="chat-question-button">体を引き締めたい</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="image-wrapper">
+        <img
+          src="assets/img/sec-lead.webp"
+          alt=""
+          width="375"
+          height="158"
+          class="background-image result-lead"
+        />
+        <img
+          src="assets/img/sec-result1.webp"
+          alt=""
+          width="642"
+          height="978"
+          class="background-image z-index-1"
+        />
+        <img src="assets/img/sec-result1-1.webp" alt="" width="343" height="160" class="photo" />
+      </div>
+    </section>
 
     <script defer src="./assets/js/script.js"></script>
   </body>
