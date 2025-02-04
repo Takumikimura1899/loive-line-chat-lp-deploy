@@ -186,3 +186,13 @@ body {
     background: #000;
   }
 }
+
+.section-program-container {
+  background-color: var(--color-white);
+
+  .image {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+}
