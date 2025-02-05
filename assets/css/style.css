@@ -210,9 +210,25 @@ body {
   }
 }
 
+.section-detail-lead {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .grid {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 89%;
+    height: auto;
+    margin: 80% 20px auto;
+  }
+}
+
 .section-detail-rental-card {
-  width: 89%;
-  margin: auto;
   color: var(--color-black33);
   background-color: var(--color-white);
   border-radius: 8px;
@@ -221,7 +237,6 @@ body {
 .section-detail-rental-contents {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 8px;
 }
 
 .section-detail-rental-title {
@@ -365,4 +380,8 @@ body {
 
 .gap {
   gap: 0.785rem;
+}
+
+.space-between {
+  justify-content: space-between;
 }
