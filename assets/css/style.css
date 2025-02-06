@@ -216,6 +216,15 @@ body {
   font-weight: 500;
 }
 
+.program-lesson-arrow-container {
+  position: relative;
+}
+
+.program-lesson-arrow {
+  margin: 22% -1%;
+  background-color: transparent;
+}
+
 .program-lesson-card-list {
   color: var(--color-black33);
 }
@@ -244,10 +253,6 @@ body {
   margin-top: 10px;
   font-size: 12px;
   font-weight: 400;
-}
-
-.program-slider-button {
-  background-color: transparent;
 }
 
 .detail-section-container {
