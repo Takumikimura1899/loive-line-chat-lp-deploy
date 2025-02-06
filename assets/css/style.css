@@ -51,23 +51,26 @@ body {
 .chat-list-item {
   display: flex;
   gap: 8px;
-
-  div {
-    flex-grow: 1;
-  }
 }
 
-.chat-message-container {
+.chat-message-flame {
+  flex-grow: 1;
   padding: 6px 12px;
   background-color: var(--color-white);
   border-radius: 0 20px 20px;
 }
 
-.chat-question-container {
+.chat-message-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.chat-question-flame {
   border-radius: 12px;
 }
 
-.chat-question-container-header {
+.chat-question-header {
   padding: 8px;
   color: var(--color-white);
   text-align: center;
@@ -81,7 +84,7 @@ body {
   font-weight: 700;
 }
 
-.chat-question-container-body {
+.chat-question-body {
   padding: 12px;
   background-color: var(--color-white);
   border-radius: 0 0 12px 12px;
@@ -104,288 +107,255 @@ body {
   border-radius: 4px;
 }
 
-.chat-message-text {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--color-black);
-}
-
-.image-wrapper {
-  position: relative;
-  margin-top: 40px;
-}
-
-.background-image {
-  max-width: 100%;
+.lead-image {
+  width: 100%;
   height: auto;
 }
 
-.result-lead {
-  position: absolute;
-  top: 0;
-}
-
-.z-index-1 {
-  z-index: 1;
-}
-
-.photo {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-}
-
-.section-result-container {
+.result-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-
-  .image {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-    width: 100%;
-    height: auto;
-  }
-
-  .image2 {
-    width: 91.5%;
-    margin: auto auto 15%;
-  }
 }
 
-.section-what-container {
+.result-image {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+}
+
+.result-studio-image {
+  width: 91.5%;
+  margin: auto auto 15%;
+}
+
+.what-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-
-  .image {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-    width: 100%;
-    height: auto;
-  }
-
-  .title-container {
-    color: var(--color-white);
-    text-align: center;
-  }
-
-  .title {
-    font-size: 26px;
-    font-weight: 700;
-  }
-
-  .sub-title {
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .explanation {
-    width: 89%;
-    margin: auto auto 20%;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--color-orange-text);
-    text-align: justify;
-  }
 }
 
-.section-program-container {
+.what-image {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+}
+
+.what-header {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.what-header-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.what-explanation-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.what-detail-text {
+  width: 89%;
+  margin: auto auto 20%;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-orange-text);
+  text-align: justify;
+}
+
+.program-wrapper {
   background-color: var(--color-white);
-
-  .image {
-    width: 90%;
-    height: auto;
-    margin: auto;
-  }
-
-  .button {
-    background-color: transparent; /* ボタンの背景を透明にする */
-  }
 }
 
-/* section-detail */
-.section-detail-container {
+.program-image {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.program-slider-button {
+  background-color: transparent;
+}
+
+.detail-wrapper {
   background: linear-gradient(180deg, #ff9239 0%, #ffe992 80%, #fff 100%);
-
-  .image {
-    width: 100%;
-    height: auto;
-    margin: auto;
-  }
 }
 
-.section-detail-lead {
+.detail-rental-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-
-  .grid {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-    width: 100%;
-    height: auto;
-  }
-
-  .card {
-    width: 89%;
-    height: auto;
-    margin: 80% 20px auto;
-  }
 }
 
-.section-detail-rental-card {
+.detail-image {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+}
+
+.detail-rental-card {
+  width: 89%;
+  height: auto;
+  margin: 80% 20px auto;
   color: var(--color-black33);
   background-color: var(--color-white);
   border-radius: 8px;
 }
 
-.section-detail-rental-contents {
+.detail-rental-card-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.section-detail-rental-title {
+.detail-rental-title {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
 }
 
-.section-detail-rental-item-list {
+.detail-rental-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-rental-item-list {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 500;
 }
 
-.section-detail-shop-card {
+.detail-shop-card {
   width: 89%;
   margin: 40px auto auto;
   background-color: var(--color-light-gray);
   border-radius: 8px;
 }
 
-.section-detail-shop-title {
+.detail-shop-header {
+  display: flex;
   height: 56px;
   color: var(--color-white);
   background-color: var(--color-black33);
   border-radius: 8px 8px 0 0;
 }
 
-.section-detail-shop-name {
+.detail-shop-name {
   display: grid;
   place-items: center start;
   width: calc(100% - 56px);
   margin-left: 10px;
   font-weight: 400;
-
-  .text {
-    font-size: 20px;
-  }
-
-  .ruby {
-    margin-left: 4px;
-    font-size: 10px;
-  }
 }
 
-.section-detail-shop-category {
+.detail-shop-name-text {
+  font-size: 20px;
+}
+
+.detail-shop-name-ruby {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+.detail-shop-category {
   display: grid;
   place-items: center;
   width: 56px;
   background: linear-gradient(90deg, #ff7718 0%, #ff852f 100%);
   border-radius: 0 8px 0 0;
-
-  .text {
-    font-size: 12px;
-    font-weight: 700;
-    text-align: center;
-  }
 }
 
-.section-detail-shop-body {
+.detail-shop-category-text {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.detail-shop-image {
+  width: 100%;
+  height: auto;
+}
+
+.detail-shop-body {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-black33);
 }
 
-.section-detail-shop-row-name {
+.detail-shop-row-first {
+  display: flex;
+}
+
+.detail-shop-row {
+  display: flex;
+  border-top: 1px solid var(--color-gray);
+}
+
+.detail-shop-row-header {
   display: grid;
   place-items: center;
   width: 72px;
 }
 
-.section-detail-shop-row-data {
+.detail-shop-row-data {
   width: calc(100% - 72px);
   padding: 0 10px;
   margin: 20px 0;
   border-left: 1px solid var(--color-gray);
-
-  .notes {
-    font-size: 12px;
-  }
-
-  .breakdown {
-    font-size: 10px;
-  }
 }
 
-.banner {
+.detail-shop-row-notes {
+  font-size: 12px;
+}
+
+.detail-shop-row-breakdown {
+  font-size: 10px;
+}
+
+.derail-banner {
   width: 89%;
   height: auto;
   margin: 20px auto auto;
 }
 
-.section-detail-button-area {
-  padding-bottom: 80px;
-  margin: 40.7px 40px auto;
-
-  .slash {
-    margin-top: 12.41px;
-  }
-
-  .text {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--color-black33);
-    text-align: center;
-  }
-
-  .campaign {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--color-green);
-  }
-}
-
-/* common */
-.flex {
-  display: flex;
-}
-
-.border-top {
-  border-top: 1px solid var(--color-gray);
-}
-
-.center {
-  align-items: center;
-  justify-content: center;
-}
-
-.end {
-  justify-content: end;
-}
-
-.image-100 {
+.detail-banner-image {
   width: 100%;
   height: auto;
 }
 
-.margin-top-10 {
+/* ここまでOK! */
+.detail-button-area {
+  padding-bottom: 80px;
+  margin: 40.7px 40px auto;
+}
+
+.detail-button-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-button-text-icon {
+  margin-top: 12.41px;
+}
+
+.detail-button-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black33);
+  text-align: center;
+}
+
+.detail-button-campaign-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-green);
+}
+
+.detail-button-image {
+  width: 100%;
+  height: auto;
   margin-top: 10px;
-}
-
-.gap {
-  gap: 0.785rem;
-}
-
-.space-between {
-  justify-content: space-between;
 }
