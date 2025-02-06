@@ -4,8 +4,8 @@ const programLessonCardSlideElement = document.querySelector('.program-lesson-ca
 const programCardSplide = new Splide(programCardSlideElement, {
   perPage: 1,
   type: 'loop',
-  padding: '4.2rem',
-  gap: '0.625rem',
+  padding: '4rem',
+  gap: '0.6rem',
   arrows: false,
   pagination: false,
 });
