@@ -60,7 +60,7 @@ body {
   border-radius: 0 20px 20px;
 }
 
-.chat-message-text {
+.chat-message {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-black);
@@ -152,12 +152,12 @@ body {
   font-weight: 700;
 }
 
-.what-explanation-text {
+.what-explanation {
   font-size: 16px;
   font-weight: 500;
 }
 
-.what-detail-text {
+.what-detail {
   width: 89%;
   margin: auto auto 20%;
   font-size: 14px;
@@ -248,7 +248,7 @@ body {
   border-radius: 8px 8px 0 0;
 }
 
-.detail-shop-name {
+.detail-shop-name-container {
   display: grid;
   place-items: center start;
   width: calc(100% - 56px);
@@ -256,7 +256,7 @@ body {
   font-weight: 400;
 }
 
-.detail-shop-name-text {
+.detail-shop-name {
   font-size: 20px;
 }
 
@@ -265,7 +265,7 @@ body {
   font-size: 10px;
 }
 
-.detail-shop-category {
+.detail-shop-category-container {
   display: grid;
   place-items: center;
   width: 56px;
@@ -273,7 +273,7 @@ body {
   border-radius: 0 8px 0 0;
 }
 
-.detail-shop-category-text {
+.detail-shop-category {
   font-size: 12px;
   font-weight: 700;
   text-align: center;
@@ -347,14 +347,14 @@ body {
   margin-top: 12.41px;
 }
 
-.detail-button-text {
+.detail-button-search {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-black33);
   text-align: center;
 }
 
-.detail-button-campaign-text {
+.detail-button-campaign {
   font-size: 18px;
   font-weight: 700;
   color: var(--color-green);
