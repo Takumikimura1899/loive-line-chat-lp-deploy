@@ -135,7 +135,7 @@ body {
   grid-template-columns: 1fr;
 }
 
-.what-container {
+.what-section-container-item {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   width: 100%;
