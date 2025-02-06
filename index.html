@@ -3,13 +3,339 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta name="description" content="" />
+    <title>【LINEチャット】女性フィットネス用記事</title>
+    <meta name="description" content="【LINEチャット】女性フィットネス用記事LP" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
   </head>
   <body>
-    <h1>boilerplate</h1>
+    <header class="header">
+      <h1 class="header-title">フィットネスアドバイザー</h1>
+    </header>
+
+    <section class="chat-section-wrapper">
+      <div class="chat-section-container">
+        <ul class="chat-list">
+          <li class="chat-list-item">
+            <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+            <div class="chat-message-flame">
+              <p class="chat-message">こんにちは！フィットネスアドバイザーのライフです！</p>
+            </div>
+          </li>
+          <li class="chat-list-item">
+            <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+            <div class="chat-message-flame">
+              <p class="chat-message">
+                運動したいけどどこがいいんだろう…？
+                <br />
+                悩むあなたにぴったりなフィットネスをご紹介しますので、
+                <br />
+                簡単なカウンセリングにご協力ください☺️
+              </p>
+            </div>
+          </li>
+          <li class="chat-list-item">
+            <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q1</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">フィットネスを始める目的はなんですか？</p>
+                <div class="chat-question-button-area">
+                  <button class="chat-question-button">リフレッシュ・健康維持</button>
+                  <button class="chat-question-button">体を引き締めたい</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lead-section-wrapper">
+      <div class="lead-section-container">
+        <img class="lead-image" src="assets/img/sec-lead.webp" alt="" width="375" height="158" />
+      </div>
+    </section>
+
+    <section class="result-section-wrapper">
+      <div class="result-section-container">
+        <img
+          class="result-image"
+          src="assets/img/sec-result.webp"
+          alt=""
+          width="642"
+          height="978"
+        />
+        <img
+          class="result-image result-studio-image"
+          src="assets/img/sec-result-studio-image.webp"
+          alt=""
+          width="343"
+          height="160"
+        />
+      </div>
+    </section>
+
+    <section class="what-section-wrapper">
+      <div class="what-section-container">
+        <img
+          class="what-section-container-item"
+          src="assets/img/sec-what.webp"
+          alt=""
+          width="563"
+          height="768"
+        />
+        <div class="what-header what-section-container-item">
+          <div class="what-header-title">
+            <h3>ロイブのホットヨガとは</h3>
+          </div>
+          <p class="what-explanation">室温38℃、湿度65%で行うヨガです。</p>
+        </div>
+
+        <div class="what-section-container-item">
+          <p class="what-detail">
+            温度と湿度が絶妙なバランスに保たれた環境で、ゆったり動き、ポーズをとることにより、やせる、
+            きれいになる効果を最大限に引き出します。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="program-section-wrapper">
+      <div class="program-section-container">
+        <img
+          class="program-image"
+          src="assets/img/sec-program.webp"
+          alt=""
+          width="341"
+          height="371"
+        />
+        <div class="program-card">
+          <div class="splide program-card-slide" role="group" aria-label="Splideの基本的なHTML">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="card-item" style="height: 200px; background-color: teal">
+                    コンテンツ1
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card-item" style="height: 200px; background-color: teal">
+                    コンテンツ2
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card-item" style="height: 200px; background-color: teal">
+                    コンテンツ3
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-lesson-card">
+        <section class="splide program-lesson-card-slide" aria-label="Custom Arrows Example">
+          <div class="splide__arrows">
+            <button
+              class="splide__arrow splide__arrow--prev program-slider-button"
+              aria-label="前へ"
+            >
+              <img src="assets/img/arrow-prev.svg" alt="" width="32" height="32" />
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next program-slider-button"
+              aria-label="次へ"
+            >
+              <img src="assets/img/arrow-next.svg" alt="" width="32" height="32" />
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  class="program-lesson-image"
+                  src="assets/img/sec-program-lesson-image1.webp"
+                  alt=""
+                  width="343"
+                  height="160"
+                />
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="height: 200px; background-color: teal">コンテンツ2a</div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="height: 200px; background-color: teal">コンテンツ3a</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="detail-section-wrapper">
+      <div class="detail-section-container">
+        <div class="detail-rental-container">
+          <img
+            class="detail-image"
+            src="assets/img/sec-detail.webp"
+            alt=""
+            width="375"
+            height="427"
+          />
+          <div class="detail-rental-card detail-image">
+            <div class="detail-rental-card-container">
+              <h4 class="detail-rental-title">必要なものは全てご用意します！</h4>
+              <div class="detail-rental-contents">
+                <img
+                  src="assets/img/sec-detail-rental-image.webp"
+                  alt=""
+                  width="119"
+                  height="100"
+                />
+                <ul class="detail-rental-list">
+                  <li>上下ウェア</li>
+                  <li>バスタオル</li>
+                  <li>フェイスタオル</li>
+                  <li>ヨガマット</li>
+                  <li>水２本セット</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <article class="detail-shop-card">
+          <div class="detail-shop-card-wrapper">
+            <div class="detail-shop-header">
+              <div class="detail-shop-name-container">
+                <h3 class="detail-shop-name">
+                  lolve<span class="detail-shop-name-ruby">(ロイブ)</span>
+                </h3>
+              </div>
+              <div class="detail-shop-category-container">
+                <p class="detail-shop-category">
+                  ホット
+                  <br />
+                  ヨガ
+                </p>
+              </div>
+            </div>
+            <div class="detail-shop-body">
+              <img
+                class="detail-shop-image"
+                src="assets/img/sec-detail-shop-image.webp"
+                alt=""
+                width="335"
+                height="181"
+              />
+              <div class="detail-shop-row-first">
+                <div class="detail-shop-row-header">
+                  <p>目的</p>
+                </div>
+                <div class="detail-shop-row-data">
+                  <p>
+                    女性らしいボディライン作り、むくみ改善、インナーマッスル、血行促進、健康維持、ダイエット、骨盤矯正
+                  </p>
+                </div>
+              </div>
+              <div class="detail-shop-row">
+                <div class="detail-shop-row-header">
+                  <p>特徴</p>
+                </div>
+                <div class="detail-shop-row-data">
+                  <p>
+                    全国64店舗。プログラム開発から、スタジオデザイン、衛生環境、通いやすさまで。とことん女性目線でこだわり抜いた女性専用ホットヨガスタジオ。
+                  </p>
+                </div>
+              </div>
+              <div class="detail-shop-row">
+                <div class="detail-shop-row-header">
+                  <p>体験料金</p>
+                </div>
+                <div class="detail-shop-row-data">
+                  <p>¥0 / 手ぶらOK</p>
+                </div>
+              </div>
+              <div class="detail-shop-row">
+                <div class="detail-shop-row-header">
+                  <p>月額料金</p>
+                </div>
+                <div class="detail-shop-row-data">
+                  <p>
+                    ¥8,910(税込) 〜 ¥10,010(税込)
+                    <br />
+                    <span class="detail-shop-row-notes">*毎月4回のレッスン受講が可能</span>
+                  </p>
+                </div>
+              </div>
+              <div class="detail-shop-row">
+                <div class="detail-shop-row-header">
+                  <p>入会金</p>
+                </div>
+                <div class="detail-shop-row-data">
+                  <p>
+                    ¥11,330(税込)
+                    <br />
+                    <span class="detail-shop-row-breakdown">
+                      [内訳]
+                      <br />
+                      入会金：¥1,100 登録料：¥2,530
+                      <br />
+                      施設利用料：¥2,530　事務手数料：¥5,170
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="detail-banner">
+          <img
+            class="detail-banner-image"
+            src="assets/img/sec-detail-banner.png"
+            alt=""
+            width="335"
+            height="113"
+          />
+        </div>
+        <div class="detail-button-area">
+          <div class="detail-button-text-container">
+            <img src="assets/img/sec-detail-left.svg" alt="" width="20" height="37" />
+            <p class="detail-button-search">
+              お近くのスタジオを探すならこちら
+              <br />
+              <span class="detail-button-campaign">限定キャンペーン</span>も実施中
+            </p>
+            <img src="assets/img/sec-detail-right.svg" alt="" width="21" height="37" />
+          </div>
+          <img
+            class="detail-button-image"
+            src="assets/img/sec-detail-button.webp"
+            alt=""
+            width="286"
+            height="73"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+    ></script>
     <script defer src="./assets/js/script.js"></script>
   </body>
 </html>
