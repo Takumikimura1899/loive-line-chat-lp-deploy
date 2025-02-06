@@ -67,6 +67,7 @@ body {
 }
 
 .chat-question-flame {
+  flex-grow: 1;
   border-radius: 12px;
 }
 
@@ -175,6 +176,11 @@ body {
   margin: auto;
 }
 
+.program-lesson-image {
+  width: 100%;
+  height: auto;
+}
+
 .program-slider-button {
   background-color: transparent;
 }
@@ -221,7 +227,7 @@ body {
   justify-content: center;
 }
 
-.detail-rental-item-list {
+.detail-rental-list {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 500;
@@ -314,7 +320,7 @@ body {
   font-size: 10px;
 }
 
-.derail-banner {
+.detail-banner {
   width: 89%;
   height: auto;
   margin: 20px auto auto;
