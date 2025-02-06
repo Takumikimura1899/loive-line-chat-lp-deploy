@@ -37,7 +37,7 @@ body {
   font-weight: 700;
 }
 
-.chat-wrapper {
+.chat-section-container {
   padding-right: 70px;
   padding-left: 12px;
 }
@@ -113,7 +113,7 @@ body {
   height: auto;
 }
 
-.result-wrapper {
+.result-section-container {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -130,7 +130,7 @@ body {
   margin: auto auto 15%;
 }
 
-.what-wrapper {
+.what-section-container {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -166,7 +166,7 @@ body {
   text-align: justify;
 }
 
-.program-wrapper {
+.program-section-container {
   background-color: var(--color-white);
 }
 
@@ -185,11 +185,11 @@ body {
   background-color: transparent;
 }
 
-.detail-wrapper {
+.detail-section-container {
   background: linear-gradient(180deg, #ff9239 0%, #ffe992 80%, #fff 100%);
 }
 
-.detail-rental-wrapper {
+.detail-rental-container {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -210,7 +210,7 @@ body {
   border-radius: 8px;
 }
 
-.detail-rental-card-wrapper {
+.detail-rental-card-container {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -337,7 +337,7 @@ body {
   margin: 40.7px 40px auto;
 }
 
-.detail-button-text-wrapper {
+.detail-button-text-container {
   display: flex;
   align-items: center;
   justify-content: center;
