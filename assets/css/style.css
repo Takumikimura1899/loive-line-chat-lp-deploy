@@ -135,7 +135,7 @@ body {
   grid-template-columns: 1fr;
 }
 
-.what-image {
+.what-container {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   width: 100%;
