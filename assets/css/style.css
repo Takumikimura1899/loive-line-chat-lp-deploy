@@ -249,10 +249,22 @@ body {
   font-weight: 500;
 }
 
-.program-lesson-detail {
+.program-lesson-list {
   margin-top: 10px;
   font-size: 12px;
   font-weight: 400;
+}
+
+.program-lesson-list-item {
+  display: inline;
+}
+
+.program-lesson-list-item:not(:first-child)::before {
+  content: '/';
+}
+
+.plus::after {
+  transform: rotate(90deg);
 }
 
 .detail-section-container {
