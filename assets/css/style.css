@@ -234,22 +234,22 @@ body {
   height: auto;
 }
 
-.program-lesson-text-wrapper {
+.program-lesson-list {
   margin-top: 10px;
 }
 
-.program-lesson-title {
+.program-lesson-list-item-category {
   font-size: 22px;
   font-weight: 700;
 }
 
-.program-lesson-summary {
+.program-lesson-list-item-summary {
   margin-top: 4px;
   font-size: 16px;
   font-weight: 500;
 }
 
-.program-lesson-detail {
+.program-lesson-list-item-detail {
   margin-top: 10px;
   font-size: 12px;
   font-weight: 400;
