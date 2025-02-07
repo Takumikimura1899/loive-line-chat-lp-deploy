@@ -26,41 +26,121 @@
 
     <section class="chat-section-wrapper">
       <div class="chat-section-container">
-        <ul class="chat-list">
-          <li class="chat-list-item">
-            <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
-            <div class="chat-message-flame">
-              <p class="chat-message">こんにちは！フィットネスアドバイザーのライフです！</p>
-            </div>
-          </li>
-          <li class="chat-list-item">
-            <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
-            <div class="chat-message-flame">
-              <p class="chat-message">
-                運動したいけどどこがいいんだろう…？
-                <br />
-                悩むあなたにぴったりなフィットネスをご紹介しますので、
-                <br />
-                簡単なカウンセリングにご協力ください☺️
-              </p>
-            </div>
-          </li>
-          <li class="chat-list-item">
-            <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
-            <div class="chat-question-flame">
-              <div class="chat-question-header">
-                <h2 class="chat-question-header-title">Q1</h2>
+        <div class="chat-list-container">
+          <ul class="chat-list">
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-message-flame">
+                <p class="chat-message">こんにちは！フィットネスアドバイザーのライフです！</p>
               </div>
-              <div class="chat-question-body">
-                <p class="chat-message">フィットネスを始める目的はなんですか？</p>
-                <div class="chat-question-button-area">
-                  <button class="chat-question-button">リフレッシュ・健康維持</button>
-                  <button class="chat-question-button">体を引き締めたい</button>
+            </li>
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-message-flame">
+                <p class="chat-message">
+                  運動したいけどどこがいいんだろう…？
+                  <br />
+                  悩むあなたにぴったりなフィットネスをご紹介しますので、
+                  <br />
+                  簡単なカウンセリングにご協力ください☺️
+                </p>
+              </div>
+            </li>
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-question-flame">
+                <div class="chat-question-header">
+                  <h2 class="chat-question-header-title">Q1</h2>
+                </div>
+                <div class="chat-question-body">
+                  <p class="chat-message">フィットネスを始める目的はなんですか？</p>
+                  <div class="chat-question-button-area">
+                    <button id="chat-refresh-button" class="chat-question-button">
+                      リフレッシュ・健康維持
+                    </button>
+                    <button id="chat-diet-button" class="chat-question-button">
+                      体を引き締めたい
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="chat-list-refresh" class="chat-list-container hidden">
+          <ul class="chat-list">
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-message-flame">
+                <p class="chat-message">リフレッシュって大事だよね～！</p>
+              </div>
+            </li>
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-message-flame">
+                <p class="chat-message">
+                  運動したいけどどこがいいんだろう…？
+                  <br />
+                  悩むあなたにぴったりなフィットネスをご紹介しますので、
+                  <br />
+                  簡単なカウンセリングにご協力ください☺️
+                </p>
+              </div>
+            </li>
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-question-flame">
+                <div class="chat-question-header">
+                  <h2 class="chat-question-header-title">Q1</h2>
+                </div>
+                <div class="chat-question-body">
+                  <p class="chat-message">フィットネスを始める目的はなんですか？</p>
+                  <div class="chat-question-button-area">
+                    <button class="chat-question-button">リフレッシュ・健康維持</button>
+                    <button class="chat-question-button">体を引き締めたい</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="chat-list-diet" class="chat-list-container hidden">
+          <ul class="chat-list">
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-message-flame">
+                <p class="chat-message">体を引き締めたい</p>
+              </div>
+            </li>
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-message-flame">
+                <p class="chat-message">
+                  運動したいけどどこがいいんだろう…？
+                  <br />
+                  悩むあなたにぴったりなフィットネスをご紹介しますので、
+                  <br />
+                  簡単なカウンセリングにご協力ください☺️
+                </p>
+              </div>
+            </li>
+            <li class="chat-list-item">
+              <img src="assets/img/sec-chat-icon.webp" alt="アドバイザー" width="44" height="44" />
+              <div class="chat-question-flame">
+                <div class="chat-question-header">
+                  <h2 class="chat-question-header-title">Q1</h2>
+                </div>
+                <div class="chat-question-body">
+                  <p class="chat-message">フィットネスを始める目的はなんですか？</p>
+                  <div class="chat-question-button-area">
+                    <button class="chat-question-button">リフレッシュ・健康維持</button>
+                    <button class="chat-question-button">体を引き締めたい</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

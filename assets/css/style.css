@@ -44,6 +44,10 @@ body {
   padding-left: 12px;
 }
 
+.chat-list-container.hidden {
+  display: none;
+}
+
 .chat-list {
   display: flex;
   flex-direction: column;
