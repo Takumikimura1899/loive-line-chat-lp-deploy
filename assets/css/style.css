@@ -8,6 +8,7 @@
   --color-orange: #f81;
   --color-orange-text: #ff831c;
   --color-green: #2e9511;
+  --color-brown: #79430030;
 }
 
 html {
@@ -167,7 +168,24 @@ body {
 }
 
 .program-section-container {
+  padding-bottom: 40px;
   background-color: var(--color-white);
+}
+
+.program-card-list-item {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 var(--color-brown);
+}
+
+.program-image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.program-image-container-item {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .program-image {
@@ -176,13 +194,78 @@ body {
   margin: auto;
 }
 
+.program-card-image {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.program-beginner-image {
+  margin: auto 4px 4px auto;
+}
+
+.program-title {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.program-summary {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.program-lesson-arrow-container {
+  position: relative;
+}
+
+.program-lesson-arrow {
+  margin: 22% -1%;
+  background-color: transparent;
+}
+
+.program-lesson-card-list {
+  color: var(--color-black33);
+}
+
 .program-lesson-image {
   width: 100%;
   height: auto;
 }
 
-.program-slider-button {
-  background-color: transparent;
+.program-lesson-text-wrapper {
+  margin-top: 10px;
+}
+
+.program-lesson-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.program-lesson-summary {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.program-lesson-list {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.program-lesson-list-item {
+  position: relative;
+  display: inline;
+  margin-right: 10px;
+}
+
+.program-lesson-list-item:not(:first-child)::before {
+  position: absolute;
+  left: -5px;
+  content: '/';
+  transform: translateX(-50%);
 }
 
 .detail-section-container {

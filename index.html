@@ -127,62 +127,186 @@
           <div class="splide program-card-slide" role="group" aria-label="Splideの基本的なHTML">
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="card-item" style="height: 200px; background-color: teal">
-                    コンテンツ1
+                <li class="splide__slide program-card-list-item">
+                  <div class="program-image-container">
+                    <img
+                      class="program-card-image program-image-container-item"
+                      src="assets/img/sec-program-image1.webp"
+                      alt=""
+                      width="201"
+                      height="146"
+                    />
+                    <img
+                      class="program-beginner-image program-image-container-item"
+                      src="assets/img/sec-program-beginner-mark.svg"
+                      alt=""
+                      width="11"
+                      height="15"
+                    />
+                  </div>
+                  <h4 class="program-title">スタンダード60</h4>
+                  <p class="program-summary">
+                    初めての方でも安心の基本コース！呼吸とカラダの動きを意識しながら、ストレッチや基本ポーズで土台をつくります。60分ゆったりカラダを動かし基本を学びましょう！
+                  </p>
+                </li>
+                <li class="splide__slide program-card-list-item">
+                  <div>
+                    <img
+                      class="program-card-image"
+                      src="assets/img/sec-program-image2.webp"
+                      alt=""
+                      width="201"
+                      height="146"
+                    />
+                    <h4 class="program-title">リンパデトックスヨガ</h4>
+                    <p class="program-summary">
+                      運動不足や冷え性で滞った血液とリンパの流れを促し、老廃物の排出機能や免疫力の向上を目指します。
+                      デトックス効果を促進させましょう。
+                    </p>
                   </div>
                 </li>
-                <li class="splide__slide">
-                  <div class="card-item" style="height: 200px; background-color: teal">
-                    コンテンツ2
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="card-item" style="height: 200px; background-color: teal">
-                    コンテンツ3
+                <li class="splide__slide program-card-list-item">
+                  <div>
+                    <img
+                      class="program-card-image"
+                      src="assets/img/sec-program-image3.webp"
+                      alt=""
+                      width="201"
+                      height="146"
+                    />
+                    <h4 class="program-title">アロマリラックスヨガ</h4>
+                    <p class="program-summary">
+                      運動が苦手な方でもゆったり楽しめるヨガ。ヨガとアロマの心地良い香りで心と身体の緊張を解きほぐします。呼吸・瞑想・ストレッチでリラックスしながら代謝をアップ。
+                    </p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div class="program-lesson-card">
-        <section class="splide program-lesson-card-slide" aria-label="Custom Arrows Example">
-          <div class="splide__arrows">
-            <button
-              class="splide__arrow splide__arrow--prev program-slider-button"
-              aria-label="前へ"
-            >
-              <img src="assets/img/arrow-prev.svg" alt="" width="32" height="32" />
-            </button>
-            <button
-              class="splide__arrow splide__arrow--next program-slider-button"
-              aria-label="次へ"
-            >
-              <img src="assets/img/arrow-next.svg" alt="" width="32" height="32" />
-            </button>
-          </div>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img
-                  class="program-lesson-image"
-                  src="assets/img/sec-program-lesson-image1.webp"
-                  alt=""
-                  width="343"
-                  height="160"
-                />
-              </li>
-              <li class="splide__slide">
-                <div class="card" style="height: 200px; background-color: teal">コンテンツ2a</div>
-              </li>
-              <li class="splide__slide">
-                <div class="card" style="height: 200px; background-color: teal">コンテンツ3a</div>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <div class="program-lesson-card">
+          <section class="splide program-lesson-card-slide" aria-label="Custom Arrows Example">
+            <div class="program-lesson-arrow-container">
+              <div class="splide__arrows">
+                <button
+                  class="splide__arrow splide__arrow--prev program-lesson-arrow"
+                  aria-label="前へ"
+                >
+                  <img src="assets/img/arrow-prev.svg" alt="" width="32" height="32" />
+                </button>
+                <button
+                  class="splide__arrow splide__arrow--next program-lesson-arrow"
+                  aria-label="次へ"
+                >
+                  <img src="assets/img/arrow-next.svg" alt="" width="32" height="32" />
+                </button>
+              </div>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list program-lesson-card-list">
+                <li class="splide__slide">
+                  <img
+                    class="program-lesson-image"
+                    src="assets/img/sec-program-lesson-image1.webp"
+                    alt=""
+                    width="343"
+                    height="160"
+                  />
+                  <div class="program-lesson-text-wrapper">
+                    <h4 class="program-lesson-title">ベーシックヨガ</h4>
+                    <p class="program-lesson-summary">まずは基本レッスン</p>
+                    <ul class="program-lesson-list">
+                      <li class="program-lesson-list-item">オトナのためのオールインワンヨガ</li>
+                      <li class="program-lesson-list-item">全身ととのう寝たまんまヨガ</li>
+                      <li class="program-lesson-list-item">ディープブレスヨガ</li>
+                      <li class="program-lesson-list-item">アロマリラックスヨガ</li>
+                      <li class="program-lesson-list-item">スタンダード60</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="splide__slide program-lesson-card-list-item">
+                  <img
+                    class="program-lesson-image"
+                    src="assets/img/sec-program-lesson-image2.webp"
+                    alt=""
+                    width="343"
+                    height="160"
+                  />
+                  <div class="program-lesson-text-wrapper">
+                    <h4 class="program-lesson-title">健康・美容</h4>
+                    <p class="program-lesson-summary">ゆがみを改善し健康美に</p>
+                    <ul class="program-lesson-list">
+                      <li class="program-lesson-list-item">花粉症スッキリヨガ</li>
+                      <li class="program-lesson-list-item">小顔リフトピラティス</li>
+                      <li class="program-lesson-list-item">子宮温活ヨガ</li>
+                      <li class="program-lesson-list-item">腸活ヨガ ver.2</li>
+                      <li class="program-lesson-list-item">みるみる変わる姿勢ピラティス</li>
+                      <li class="program-lesson-list-item">膣トレビューティヨガ</li>
+                      <li class="program-lesson-list-item">フェイスアップヨガ</li>
+                      <li class="program-lesson-list-item">ボールでゆるめてゆがみとりヨガ</li>
+                      <li class="program-lesson-list-item">免疫セラピーヨガ</li>
+                      <li class="program-lesson-list-item">リンパデトックスヨガ</li>
+                      <li class="program-lesson-list-item">美姿勢アンチエイジングヨガ</li>
+                      <li class="program-lesson-list-item">骨盤矯正ヨガ</li>
+                      <li class="program-lesson-list-item">肩コリラックスヨガ</li>
+                      <li class="program-lesson-list-item">ココロカラダリセットヨガ</li>
+                      <li class="program-lesson-list-item">ととのえてゆがみとりヨガ</li>
+                    </ul>
+                </li>
+                <li class="splide__slide program--lesson-card-list-item">
+                  <img
+                    class="program-lesson-image"
+                    src="assets/img/sec-program-lesson-image3.webp"
+                    alt=""
+                    width="343"
+                    height="160"
+                  />
+                  <div class="program-lesson-text-wrapper">
+                    <h4 class="program-lesson-title">ダイエット・エクササイズ</h4>
+                    <p class="program-lesson-summary">やせる、きれいになる</p>
+                    <ul class="program-lesson-list">
+                      <li class="program-lesson-list-item">お腹引き締めヨガ</li>
+                      <li class="program-lesson-list-item">ピラティスブートキャンプ</li>
+                      <li class="program-lesson-list-item">SOUND FEEL YOGA ver.2</li>
+                      <li class="program-lesson-list-item">エアロビヨガ</li>
+                      <li class="program-lesson-list-item">美ボディフローピラティス</li>
+                      <li class="program-lesson-list-item">BEAT CORE HIIT</li>
+                      <li class="program-lesson-list-item">もも尻ヨガティス</li>
+                      <li class="program-lesson-list-item">BEAT DRUM DIET</li>
+                      <li class="program-lesson-list-item">SUMO YOGA</li>
+                      <li class="program-lesson-list-item">セルトル美脚ヨガ</li>
+                      <li class="program-lesson-list-item">背中美人ヨガ</li>
+                      <li class="program-lesson-list-item">ダイエットヨガ</li>
+                      <li class="program-lesson-list-item">痩せる身体をつくるダイエットヨガ</li>
+                      <li class="program-lesson-list-item">スリムアップブレス</li>
+                      <li class="program-lesson-list-item">ホットピラティス</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="splide__slide program--lesson-card-list-item">
+                  <img
+                    class="program-lesson-image"
+                    src="assets/img/sec-program-lesson-image4.webp"
+                    alt=""
+                    width="343"
+                    height="160"
+                  />
+                  <div class="program-lesson-text-wrapper">
+                    <h4 class="program-lesson-title">ステップアップ</h4>
+                    <p class="program-lesson-summary">もっと、ヨガを深める</p>
+
+                    <ul class="program-lesson-list">
+                      <li class="program-lesson-list-item">アドバンス90</li>
+                      <li class="program-lesson-list-item">パワーヨガAdvance</li>
+                      <li class="program-lesson-list-item">EX(エクサ)パワーヨガ</li>
+                      <li class="program-lesson-list-item">はじめてのパワーヨガ</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
 
