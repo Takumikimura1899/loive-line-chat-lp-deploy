@@ -256,11 +256,16 @@ body {
 }
 
 .program-lesson-list-item {
+  position: relative;
   display: inline;
+  margin-right: 10px;
 }
 
 .program-lesson-list-item:not(:first-child)::before {
+  position: absolute;
+  left: -5px;
   content: '/';
+  transform: translateX(-50%);
 }
 
 .plus::after {
