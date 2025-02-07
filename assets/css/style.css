@@ -268,10 +268,6 @@ body {
   transform: translateX(-50%);
 }
 
-.plus::after {
-  transform: rotate(90deg);
-}
-
 .detail-section-container {
   background: linear-gradient(180deg, #ff9239 0%, #ffe992 80%, #fff 100%);
 }
