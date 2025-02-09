@@ -9,6 +9,7 @@
   --color-orange-text: #ff831c;
   --color-green: #2e9511;
   --color-brown: #79430030;
+  --color-dark-brown: #945b0040;
 }
 
 html {
@@ -119,16 +120,64 @@ body {
   grid-template-columns: 1fr;
 }
 
-.result-image {
+.result-section-container-item {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   width: 100%;
   height: auto;
 }
 
-.result-studio-image {
-  width: 91.5%;
-  margin: auto auto 15%;
+.result-image-fade-container {
+  position: relative;
+  margin: auto auto 58%;
+  box-shadow: 0 0 12px 0 var(--color-dark-brown);
+}
+
+.result-image-fade-container-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: result-fade-animation 15s infinite linear;
+}
+
+.result-image-fade-item:first-child {
+  animation-delay: 0s;
+}
+
+.result-image-fade-item:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.result-image-fade-item:last-child {
+  animation-delay: 10s;
+}
+
+@keyframes result-fade-animation {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  38% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.result-image-fade {
+  width: 91%;
+  height: auto;
+  margin: auto;
 }
 
 .what-section-container {
