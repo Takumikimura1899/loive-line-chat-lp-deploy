@@ -47,10 +47,6 @@ body {
   padding-left: 12px;
 }
 
-.chat-list-container.hidden {
-  display: none;
-}
-
 .chat-list {
   display: flex;
   flex-direction: column;
@@ -67,17 +63,9 @@ body {
   display: none;
 }
 
-.chat-advisor.hidden {
-  display: none;
-}
-
 .chat-message-container {
   flex-grow: 1;
   width: 100%;
-}
-
-.chat-message-container.hidden {
-  display: none;
 }
 
 .chat-message-flame {
@@ -577,4 +565,8 @@ body {
   width: 100%;
   height: auto;
   margin-top: 10px;
+}
+
+.hidden {
+  display: none;
 }
