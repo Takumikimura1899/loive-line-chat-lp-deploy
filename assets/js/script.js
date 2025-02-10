@@ -1,7 +1,7 @@
-const q1ChatRefreshButtonElement = document.querySelector('#chat-refresh-button');
-const q1ChatDietButtonElement = document.querySelector('#chat-diet-button');
-const q1ChatListRefreshElement = document.querySelector('#chat-list-refresh');
-const q1ChatListDietElement = document.querySelector('#chat-list-diet');
+const q1ChatRefreshButtonElement = document.getElementById('chat-refresh-button');
+const q1ChatDietButtonElement = document.getElementById('chat-diet-button');
+const q1ChatListRefreshElement = document.getElementById('chat-list-refresh');
+const q1ChatListDietElement = document.getElementById('chat-list-diet');
 
 q1ChatRefreshButtonElement.addEventListener('click', () => {
   q1ChatListRefreshElement.classList.remove('hidden');
