@@ -60,10 +60,6 @@ body {
   gap: 8px;
 }
 
-.chat-list-item.hidden {
-  display: none;
-}
-
 .chat-message-container {
   flex-grow: 1;
   width: 100%;
