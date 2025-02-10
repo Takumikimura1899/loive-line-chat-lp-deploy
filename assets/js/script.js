@@ -15,6 +15,18 @@ q1ChatDietButtonElement.addEventListener('click', () => {
   showChatList('q3');
 });
 
+const resultLolveButtonElement = document.getElementById('result-lolve-button');
+resultLolveButtonElement.addEventListener('click', () => {
+  const resultLolveElement = document.getElementById('chat-result-lolve');
+  showChatResult(resultLolveElement);
+});
+
+const resultPilateskButtonElement = document.getElementById('result-pilatesk-button');
+resultPilateskButtonElement.addEventListener('click', () => {
+  const resultPilateskElement = document.getElementById('chat-result-pilatesk');
+  showChatResult(resultPilateskElement);
+});
+
 function showChatList(targetId) {
   const targetElement = document.getElementById(targetId);
   const chatListItemElementList = targetElement.querySelectorAll('.chat-list-item');
@@ -60,6 +72,11 @@ function createChatDotContainer() {
 
   chatDotContainer.append(chatDotFlame);
   return chatDotContainer;
+}
+
+function showChatResult(targetElement) {
+  const resultElement = targetElement.querySelector('.chat-result-wrapper');
+  resultElement.classList.remove('hidden');
 }
 
 const programCardSlideElement = document.querySelector('.program-card-slide');

@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: 'Noto Sans JP', serif;
   line-height: 1.2;
   letter-spacing: 0.02em;

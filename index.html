@@ -124,8 +124,8 @@
                   <div class="chat-question-body">
                     <p class="chat-message">目指したい姿ってどんなのが理想？</p>
                     <div class="chat-question-button-area">
-                      <button class="chat-question-button">代謝アップで太りにくい体</button>
-                      <button class="chat-question-button">心身のバランスを整え、ストレスを解消</button>
+                      <button id="result-lolve-button" class="chat-question-button">代謝アップで太りにくい体</button>
+                      <button id="result-pilatesk-button" class="chat-question-button">心身のバランスを整え、ストレスを解消</button>
                       <button class="chat-question-button">骨盤の歪みやO脚を改善した美しい姿勢</button>
                       <button class="chat-question-button">しなやかで女性らしいボディメイク</button>
                     </div>
@@ -138,419 +138,499 @@
       </div>
     </section>
 
-    <section class="lead-section-wrapper">
-      <div class="lead-section-container">
-        <img class="lead-image" src="assets/img/sec-lead.webp" alt="" width="375" height="158" />
-      </div>
-    </section>
-
-    <section class="result-section-wrapper">
-      <div class="result-section-container">
-        <img
-          class="result-section-container-item"
-          src="assets/img/sec-result.webp"
-          alt=""
-          width="642"
-          height="978"
-        />
-        <div class="result-image-fade-container result-section-container-item ">
-          <div class="result-image-fade-container-item result-image-fade-item">
+    <div id="chat-result-lolve">
+      <div class="chat-result-wrapper hidden">
+        <section class="lead-section-wrapper">
+          <div class="lead-section-container">
+            <img class="lead-image" src="assets/img/sec-lead.webp" alt="" width="375" height="158" />
+          </div>
+        </section>
+  
+        <section class="result-section-wrapper">
+          <div class="result-section-container">
             <img
-              class="result-image-fade"
-              src="assets/img/sec-result-studio-image1.webp"
+              class="result-section-container-item"
+              src="assets/img/sec-result.webp"
               alt=""
-              width="343"
-              height="160"
+              width="642"
+              height="978"
             />
-          </div>
-          <div class="result-image-fade-container-item result-image-fade-item">
-            <img
-              class="result-image-fade"
-              src="assets/img/sec-result-studio-image2.webp"
-              alt=""
-              width="343"
-              height="160"
-            />
-          </div>
-          <div class="result-image-fade-container-item result-image-fade-item">
-            <img
-              class="result-image-fade"
-              src="assets/img/sec-result-studio-image3.webp"
-              alt=""
-              width="343"
-              height="160"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="what-section-wrapper">
-      <div class="what-section-container">
-        <img
-          class="what-section-container-item"
-          src="assets/img/sec-what.webp"
-          alt=""
-          width="563"
-          height="768"
-        />
-        <div class="what-header what-section-container-item">
-          <div class="what-header-title">
-            <h3>ロイブのホットヨガとは</h3>
-          </div>
-          <p class="what-explanation">室温38℃、湿度65%で行うヨガです。</p>
-        </div>
-
-        <div class="what-section-container-item">
-          <p class="what-detail">
-            温度と湿度が絶妙なバランスに保たれた環境で、ゆったり動き、ポーズをとることにより、やせる、
-            きれいになる効果を最大限に引き出します。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="program-section-wrapper">
-      <div class="program-section-container">
-        <img
-          class="program-image"
-          src="assets/img/sec-program.webp"
-          alt=""
-          width="341"
-          height="371"
-        />
-        <div class="program-card">
-          <div class="splide program-card-slide" role="group" aria-label="Splideの基本的なHTML">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide program-card-list-item">
-                  <div class="program-image-container">
-                    <img
-                      class="program-card-image program-image-container-item"
-                      src="assets/img/sec-program-image1.webp"
-                      alt=""
-                      width="201"
-                      height="146"
-                    />
-                    <img
-                      class="program-beginner-image program-image-container-item"
-                      src="assets/img/sec-program-beginner-mark.svg"
-                      alt=""
-                      width="11"
-                      height="15"
-                    />
-                  </div>
-                  <h4 class="program-title">スタンダード60</h4>
-                  <p class="program-summary">
-                    初めての方でも安心の基本コース！呼吸とカラダの動きを意識しながら、ストレッチや基本ポーズで土台をつくります。60分ゆったりカラダを動かし基本を学びましょう！
-                  </p>
-                </li>
-                <li class="splide__slide program-card-list-item">
-                  <div>
-                    <img
-                      class="program-card-image"
-                      src="assets/img/sec-program-image2.webp"
-                      alt=""
-                      width="201"
-                      height="146"
-                    />
-                    <h4 class="program-title">リンパデトックスヨガ</h4>
-                    <p class="program-summary">
-                      運動不足や冷え性で滞った血液とリンパの流れを促し、老廃物の排出機能や免疫力の向上を目指します。
-                      デトックス効果を促進させましょう。
-                    </p>
-                  </div>
-                </li>
-                <li class="splide__slide program-card-list-item">
-                  <div>
-                    <img
-                      class="program-card-image"
-                      src="assets/img/sec-program-image3.webp"
-                      alt=""
-                      width="201"
-                      height="146"
-                    />
-                    <h4 class="program-title">アロマリラックスヨガ</h4>
-                    <p class="program-summary">
-                      運動が苦手な方でもゆったり楽しめるヨガ。ヨガとアロマの心地良い香りで心と身体の緊張を解きほぐします。呼吸・瞑想・ストレッチでリラックスしながら代謝をアップ。
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="program-lesson-card">
-          <section class="splide program-lesson-card-slide" aria-label="Custom Arrows Example">
-            <div class="program-lesson-arrow-container">
-              <div class="splide__arrows">
-                <button
-                  class="splide__arrow splide__arrow--prev program-lesson-arrow"
-                  aria-label="前へ"
-                >
-                  <img src="assets/img/arrow-prev.svg" alt="" width="32" height="32" />
-                </button>
-                <button
-                  class="splide__arrow splide__arrow--next program-lesson-arrow"
-                  aria-label="次へ"
-                >
-                  <img src="assets/img/arrow-next.svg" alt="" width="32" height="32" />
-                </button>
-              </div>
-            </div>
-            <div class="splide__track">
-              <ul class="splide__list program-lesson-card-list">
-                <li class="splide__slide">
-                  <img
-                    class="program-lesson-image"
-                    src="assets/img/sec-program-lesson-image1.webp"
-                    alt=""
-                    width="343"
-                    height="160"
-                  />
-                  <div class="program-lesson-text-wrapper">
-                    <h4 class="program-lesson-title">ベーシックヨガ</h4>
-                    <p class="program-lesson-summary">まずは基本レッスン</p>
-                    <ul class="program-lesson-list">
-                      <li class="program-lesson-list-item">オトナのためのオールインワンヨガ</li>
-                      <li class="program-lesson-list-item">全身ととのう寝たまんまヨガ</li>
-                      <li class="program-lesson-list-item">ディープブレスヨガ</li>
-                      <li class="program-lesson-list-item">アロマリラックスヨガ</li>
-                      <li class="program-lesson-list-item">スタンダード60</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="splide__slide program-lesson-card-list-item">
-                  <img
-                    class="program-lesson-image"
-                    src="assets/img/sec-program-lesson-image2.webp"
-                    alt=""
-                    width="343"
-                    height="160"
-                  />
-                  <div class="program-lesson-text-wrapper">
-                    <h4 class="program-lesson-title">健康・美容</h4>
-                    <p class="program-lesson-summary">ゆがみを改善し健康美に</p>
-                    <ul class="program-lesson-list">
-                      <li class="program-lesson-list-item">花粉症スッキリヨガ</li>
-                      <li class="program-lesson-list-item">小顔リフトピラティス</li>
-                      <li class="program-lesson-list-item">子宮温活ヨガ</li>
-                      <li class="program-lesson-list-item">腸活ヨガ ver.2</li>
-                      <li class="program-lesson-list-item">みるみる変わる姿勢ピラティス</li>
-                      <li class="program-lesson-list-item">膣トレビューティヨガ</li>
-                      <li class="program-lesson-list-item">フェイスアップヨガ</li>
-                      <li class="program-lesson-list-item">ボールでゆるめてゆがみとりヨガ</li>
-                      <li class="program-lesson-list-item">免疫セラピーヨガ</li>
-                      <li class="program-lesson-list-item">リンパデトックスヨガ</li>
-                      <li class="program-lesson-list-item">美姿勢アンチエイジングヨガ</li>
-                      <li class="program-lesson-list-item">骨盤矯正ヨガ</li>
-                      <li class="program-lesson-list-item">肩コリラックスヨガ</li>
-                      <li class="program-lesson-list-item">ココロカラダリセットヨガ</li>
-                      <li class="program-lesson-list-item">ととのえてゆがみとりヨガ</li>
-                    </ul>
-                </li>
-                <li class="splide__slide program--lesson-card-list-item">
-                  <img
-                    class="program-lesson-image"
-                    src="assets/img/sec-program-lesson-image3.webp"
-                    alt=""
-                    width="343"
-                    height="160"
-                  />
-                  <div class="program-lesson-text-wrapper">
-                    <h4 class="program-lesson-title">ダイエット・エクササイズ</h4>
-                    <p class="program-lesson-summary">やせる、きれいになる</p>
-                    <ul class="program-lesson-list">
-                      <li class="program-lesson-list-item">お腹引き締めヨガ</li>
-                      <li class="program-lesson-list-item">ピラティスブートキャンプ</li>
-                      <li class="program-lesson-list-item">SOUND FEEL YOGA ver.2</li>
-                      <li class="program-lesson-list-item">エアロビヨガ</li>
-                      <li class="program-lesson-list-item">美ボディフローピラティス</li>
-                      <li class="program-lesson-list-item">BEAT CORE HIIT</li>
-                      <li class="program-lesson-list-item">もも尻ヨガティス</li>
-                      <li class="program-lesson-list-item">BEAT DRUM DIET</li>
-                      <li class="program-lesson-list-item">SUMO YOGA</li>
-                      <li class="program-lesson-list-item">セルトル美脚ヨガ</li>
-                      <li class="program-lesson-list-item">背中美人ヨガ</li>
-                      <li class="program-lesson-list-item">ダイエットヨガ</li>
-                      <li class="program-lesson-list-item">痩せる身体をつくるダイエットヨガ</li>
-                      <li class="program-lesson-list-item">スリムアップブレス</li>
-                      <li class="program-lesson-list-item">ホットピラティス</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="splide__slide program--lesson-card-list-item">
-                  <img
-                    class="program-lesson-image"
-                    src="assets/img/sec-program-lesson-image4.webp"
-                    alt=""
-                    width="343"
-                    height="160"
-                  />
-                  <div class="program-lesson-text-wrapper">
-                    <h4 class="program-lesson-title">ステップアップ</h4>
-                    <p class="program-lesson-summary">もっと、ヨガを深める</p>
-
-                    <ul class="program-lesson-list">
-                      <li class="program-lesson-list-item">アドバンス90</li>
-                      <li class="program-lesson-list-item">パワーヨガAdvance</li>
-                      <li class="program-lesson-list-item">EX(エクサ)パワーヨガ</li>
-                      <li class="program-lesson-list-item">はじめてのパワーヨガ</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </div>
-    </section>
-
-    <section class="detail-section-wrapper">
-      <div class="detail-section-container">
-        <div class="detail-rental-container">
-          <img
-            class="detail-image"
-            src="assets/img/sec-detail.webp"
-            alt=""
-            width="375"
-            height="427"
-          />
-          <div class="detail-rental-card detail-image">
-            <div class="detail-rental-card-container">
-              <h4 class="detail-rental-title">必要なものは全てご用意します！</h4>
-              <div class="detail-rental-contents">
+            <div class="result-image-fade-container result-section-container-item ">
+              <div class="result-image-fade-container-item result-image-fade-item">
                 <img
-                  src="assets/img/sec-detail-rental-image.webp"
+                  class="result-image-fade"
+                  src="assets/img/sec-result-studio-image1.webp"
                   alt=""
-                  width="119"
-                  height="100"
+                  width="343"
+                  height="160"
                 />
-                <ul class="detail-rental-list">
-                  <li>上下ウェア</li>
-                  <li>バスタオル</li>
-                  <li>フェイスタオル</li>
-                  <li>ヨガマット</li>
-                  <li>水２本セット</li>
-                </ul>
+              </div>
+              <div class="result-image-fade-container-item result-image-fade-item">
+                <img
+                  class="result-image-fade"
+                  src="assets/img/sec-result-studio-image2.webp"
+                  alt=""
+                  width="343"
+                  height="160"
+                />
+              </div>
+              <div class="result-image-fade-container-item result-image-fade-item">
+                <img
+                  class="result-image-fade"
+                  src="assets/img/sec-result-studio-image3.webp"
+                  alt=""
+                  width="343"
+                  height="160"
+                />
               </div>
             </div>
           </div>
-        </div>
-        <article class="detail-shop-card">
-          <div class="detail-shop-card-wrapper">
-            <div class="detail-shop-header">
-              <div class="detail-shop-name-container">
-                <h3 class="detail-shop-name">
-                  lolve<span class="detail-shop-name-ruby">(ロイブ)</span>
-                </h3>
+        </section>
+    
+        <section class="what-section-wrapper">
+          <div class="what-section-container">
+            <img
+              class="what-section-container-item"
+              src="assets/img/sec-what.webp"
+              alt=""
+              width="563"
+              height="768"
+            />
+            <div class="what-header what-section-container-item">
+              <div class="what-header-title">
+                <h3>ロイブのホットヨガとは</h3>
               </div>
-              <div class="detail-shop-category-container">
-                <p class="detail-shop-category">
-                  ホット
-                  <br />
-                  ヨガ
-                </p>
+              <p class="what-explanation">室温38℃、湿度65%で行うヨガです。</p>
+            </div>
+    
+            <div class="what-section-container-item">
+              <p class="what-detail">
+                温度と湿度が絶妙なバランスに保たれた環境で、ゆったり動き、ポーズをとることにより、やせる、
+                きれいになる効果を最大限に引き出します。
+              </p>
+            </div>
+          </div>
+        </section>
+    
+        <section class="program-section-wrapper">
+          <div class="program-section-container">
+            <img
+              class="program-image"
+              src="assets/img/sec-program.webp"
+              alt=""
+              width="341"
+              height="371"
+            />
+            <div class="program-card">
+              <div class="splide program-card-slide" role="group" aria-label="Splideの基本的なHTML">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide program-card-list-item">
+                      <div class="program-image-container">
+                        <img
+                          class="program-card-image program-image-container-item"
+                          src="assets/img/sec-program-image1.webp"
+                          alt=""
+                          width="201"
+                          height="146"
+                        />
+                        <img
+                          class="program-beginner-image program-image-container-item"
+                          src="assets/img/sec-program-beginner-mark.svg"
+                          alt=""
+                          width="11"
+                          height="15"
+                        />
+                      </div>
+                      <h4 class="program-title">スタンダード60</h4>
+                      <p class="program-summary">
+                        初めての方でも安心の基本コース！呼吸とカラダの動きを意識しながら、ストレッチや基本ポーズで土台をつくります。60分ゆったりカラダを動かし基本を学びましょう！
+                      </p>
+                    </li>
+                    <li class="splide__slide program-card-list-item">
+                      <div>
+                        <img
+                          class="program-card-image"
+                          src="assets/img/sec-program-image2.webp"
+                          alt=""
+                          width="201"
+                          height="146"
+                        />
+                        <h4 class="program-title">リンパデトックスヨガ</h4>
+                        <p class="program-summary">
+                          運動不足や冷え性で滞った血液とリンパの流れを促し、老廃物の排出機能や免疫力の向上を目指します。
+                          デトックス効果を促進させましょう。
+                        </p>
+                      </div>
+                    </li>
+                    <li class="splide__slide program-card-list-item">
+                      <div>
+                        <img
+                          class="program-card-image"
+                          src="assets/img/sec-program-image3.webp"
+                          alt=""
+                          width="201"
+                          height="146"
+                        />
+                        <h4 class="program-title">アロマリラックスヨガ</h4>
+                        <p class="program-summary">
+                          運動が苦手な方でもゆったり楽しめるヨガ。ヨガとアロマの心地良い香りで心と身体の緊張を解きほぐします。呼吸・瞑想・ストレッチでリラックスしながら代謝をアップ。
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="detail-shop-body">
+            <div class="program-lesson-card">
+              <section class="splide program-lesson-card-slide" aria-label="Custom Arrows Example">
+                <div class="program-lesson-arrow-container">
+                  <div class="splide__arrows">
+                    <button
+                      class="splide__arrow splide__arrow--prev program-lesson-arrow"
+                      aria-label="前へ"
+                    >
+                      <img src="assets/img/arrow-prev.svg" alt="" width="32" height="32" />
+                    </button>
+                    <button
+                      class="splide__arrow splide__arrow--next program-lesson-arrow"
+                      aria-label="次へ"
+                    >
+                      <img src="assets/img/arrow-next.svg" alt="" width="32" height="32" />
+                    </button>
+                  </div>
+                </div>
+                <div class="splide__track">
+                  <ul class="splide__list program-lesson-card-list">
+                    <li class="splide__slide">
+                      <img
+                        class="program-lesson-image"
+                        src="assets/img/sec-program-lesson-image1.webp"
+                        alt=""
+                        width="343"
+                        height="160"
+                      />
+                      <div class="program-lesson-text-wrapper">
+                        <h4 class="program-lesson-title">ベーシックヨガ</h4>
+                        <p class="program-lesson-summary">まずは基本レッスン</p>
+                        <ul class="program-lesson-list">
+                          <li class="program-lesson-list-item">オトナのためのオールインワンヨガ</li>
+                          <li class="program-lesson-list-item">全身ととのう寝たまんまヨガ</li>
+                          <li class="program-lesson-list-item">ディープブレスヨガ</li>
+                          <li class="program-lesson-list-item">アロマリラックスヨガ</li>
+                          <li class="program-lesson-list-item">スタンダード60</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="splide__slide program-lesson-card-list-item">
+                      <img
+                        class="program-lesson-image"
+                        src="assets/img/sec-program-lesson-image2.webp"
+                        alt=""
+                        width="343"
+                        height="160"
+                      />
+                      <div class="program-lesson-text-wrapper">
+                        <h4 class="program-lesson-title">健康・美容</h4>
+                        <p class="program-lesson-summary">ゆがみを改善し健康美に</p>
+                        <ul class="program-lesson-list">
+                          <li class="program-lesson-list-item">花粉症スッキリヨガ</li>
+                          <li class="program-lesson-list-item">小顔リフトピラティス</li>
+                          <li class="program-lesson-list-item">子宮温活ヨガ</li>
+                          <li class="program-lesson-list-item">腸活ヨガ ver.2</li>
+                          <li class="program-lesson-list-item">みるみる変わる姿勢ピラティス</li>
+                          <li class="program-lesson-list-item">膣トレビューティヨガ</li>
+                          <li class="program-lesson-list-item">フェイスアップヨガ</li>
+                          <li class="program-lesson-list-item">ボールでゆるめてゆがみとりヨガ</li>
+                          <li class="program-lesson-list-item">免疫セラピーヨガ</li>
+                          <li class="program-lesson-list-item">リンパデトックスヨガ</li>
+                          <li class="program-lesson-list-item">美姿勢アンチエイジングヨガ</li>
+                          <li class="program-lesson-list-item">骨盤矯正ヨガ</li>
+                          <li class="program-lesson-list-item">肩コリラックスヨガ</li>
+                          <li class="program-lesson-list-item">ココロカラダリセットヨガ</li>
+                          <li class="program-lesson-list-item">ととのえてゆがみとりヨガ</li>
+                        </ul>
+                    </li>
+                    <li class="splide__slide program--lesson-card-list-item">
+                      <img
+                        class="program-lesson-image"
+                        src="assets/img/sec-program-lesson-image3.webp"
+                        alt=""
+                        width="343"
+                        height="160"
+                      />
+                      <div class="program-lesson-text-wrapper">
+                        <h4 class="program-lesson-title">ダイエット・エクササイズ</h4>
+                        <p class="program-lesson-summary">やせる、きれいになる</p>
+                        <ul class="program-lesson-list">
+                          <li class="program-lesson-list-item">お腹引き締めヨガ</li>
+                          <li class="program-lesson-list-item">ピラティスブートキャンプ</li>
+                          <li class="program-lesson-list-item">SOUND FEEL YOGA ver.2</li>
+                          <li class="program-lesson-list-item">エアロビヨガ</li>
+                          <li class="program-lesson-list-item">美ボディフローピラティス</li>
+                          <li class="program-lesson-list-item">BEAT CORE HIIT</li>
+                          <li class="program-lesson-list-item">もも尻ヨガティス</li>
+                          <li class="program-lesson-list-item">BEAT DRUM DIET</li>
+                          <li class="program-lesson-list-item">SUMO YOGA</li>
+                          <li class="program-lesson-list-item">セルトル美脚ヨガ</li>
+                          <li class="program-lesson-list-item">背中美人ヨガ</li>
+                          <li class="program-lesson-list-item">ダイエットヨガ</li>
+                          <li class="program-lesson-list-item">痩せる身体をつくるダイエットヨガ</li>
+                          <li class="program-lesson-list-item">スリムアップブレス</li>
+                          <li class="program-lesson-list-item">ホットピラティス</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="splide__slide program--lesson-card-list-item">
+                      <img
+                        class="program-lesson-image"
+                        src="assets/img/sec-program-lesson-image4.webp"
+                        alt=""
+                        width="343"
+                        height="160"
+                      />
+                      <div class="program-lesson-text-wrapper">
+                        <h4 class="program-lesson-title">ステップアップ</h4>
+                        <p class="program-lesson-summary">もっと、ヨガを深める</p>
+    
+                        <ul class="program-lesson-list">
+                          <li class="program-lesson-list-item">アドバンス90</li>
+                          <li class="program-lesson-list-item">パワーヨガAdvance</li>
+                          <li class="program-lesson-list-item">EX(エクサ)パワーヨガ</li>
+                          <li class="program-lesson-list-item">はじめてのパワーヨガ</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+    
+        <section class="detail-section-wrapper">
+          <div class="detail-section-container">
+            <div class="detail-rental-container">
               <img
-                class="detail-shop-image"
-                src="assets/img/sec-detail-shop-image.webp"
+                class="detail-image"
+                src="assets/img/sec-detail.webp"
+                alt=""
+                width="375"
+                height="427"
+              />
+              <div class="detail-rental-card detail-image">
+                <div class="detail-rental-card-container">
+                  <h4 class="detail-rental-title">必要なものは全てご用意します！</h4>
+                  <div class="detail-rental-contents">
+                    <img
+                      src="assets/img/sec-detail-rental-image.webp"
+                      alt=""
+                      width="119"
+                      height="100"
+                    />
+                    <ul class="detail-rental-list">
+                      <li>上下ウェア</li>
+                      <li>バスタオル</li>
+                      <li>フェイスタオル</li>
+                      <li>ヨガマット</li>
+                      <li>水２本セット</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <article class="detail-shop-card">
+              <div class="detail-shop-card-wrapper">
+                <div class="detail-shop-header">
+                  <div class="detail-shop-name-container">
+                    <h3 class="detail-shop-name">
+                      lolve<span class="detail-shop-name-ruby">(ロイブ)</span>
+                    </h3>
+                  </div>
+                  <div class="detail-shop-category-container">
+                    <p class="detail-shop-category">
+                      ホット
+                      <br />
+                      ヨガ
+                    </p>
+                  </div>
+                </div>
+                <div class="detail-shop-body">
+                  <img
+                    class="detail-shop-image"
+                    src="assets/img/sec-detail-shop-image.webp"
+                    alt=""
+                    width="335"
+                    height="181"
+                  />
+                  <div class="detail-shop-row-first">
+                    <div class="detail-shop-row-header">
+                      <p>目的</p>
+                    </div>
+                    <div class="detail-shop-row-data">
+                      <p>
+                        女性らしいボディライン作り、むくみ改善、インナーマッスル、血行促進、健康維持、ダイエット、骨盤矯正
+                      </p>
+                    </div>
+                  </div>
+                  <div class="detail-shop-row">
+                    <div class="detail-shop-row-header">
+                      <p>特徴</p>
+                    </div>
+                    <div class="detail-shop-row-data">
+                      <p>
+                        全国64店舗。プログラム開発から、スタジオデザイン、衛生環境、通いやすさまで。とことん女性目線でこだわり抜いた女性専用ホットヨガスタジオ。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="detail-shop-row">
+                    <div class="detail-shop-row-header">
+                      <p>体験料金</p>
+                    </div>
+                    <div class="detail-shop-row-data">
+                      <p>¥0 / 手ぶらOK</p>
+                    </div>
+                  </div>
+                  <div class="detail-shop-row">
+                    <div class="detail-shop-row-header">
+                      <p>月額料金</p>
+                    </div>
+                    <div class="detail-shop-row-data">
+                      <p>
+                        ¥8,910(税込) 〜 ¥10,010(税込)
+                        <br />
+                        <span class="detail-shop-row-notes">*毎月4回のレッスン受講が可能</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="detail-shop-row">
+                    <div class="detail-shop-row-header">
+                      <p>入会金</p>
+                    </div>
+                    <div class="detail-shop-row-data">
+                      <p>
+                        ¥11,330(税込)
+                        <br />
+                        <span class="detail-shop-row-breakdown">
+                          [内訳]
+                          <br />
+                          入会金：¥1,100 登録料：¥2,530
+                          <br />
+                          施設利用料：¥2,530　事務手数料：¥5,170
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div class="detail-banner">
+              <img
+                class="detail-banner-image"
+                src="assets/img/sec-detail-banner.png"
                 alt=""
                 width="335"
-                height="181"
+                height="113"
               />
-              <div class="detail-shop-row-first">
-                <div class="detail-shop-row-header">
-                  <p>目的</p>
-                </div>
-                <div class="detail-shop-row-data">
-                  <p>
-                    女性らしいボディライン作り、むくみ改善、インナーマッスル、血行促進、健康維持、ダイエット、骨盤矯正
-                  </p>
-                </div>
+            </div>
+            <div class="detail-button-area">
+              <div class="detail-button-text-container">
+                <img src="assets/img/sec-detail-left.svg" alt="" width="20" height="37" />
+                <p class="detail-button-search">
+                  お近くのスタジオを探すならこちら
+                  <br />
+                  <span class="detail-button-campaign">限定キャンペーン</span>も実施中
+                </p>
+                <img src="assets/img/sec-detail-right.svg" alt="" width="21" height="37" />
               </div>
-              <div class="detail-shop-row">
-                <div class="detail-shop-row-header">
-                  <p>特徴</p>
-                </div>
-                <div class="detail-shop-row-data">
-                  <p>
-                    全国64店舗。プログラム開発から、スタジオデザイン、衛生環境、通いやすさまで。とことん女性目線でこだわり抜いた女性専用ホットヨガスタジオ。
-                  </p>
-                </div>
+              <img
+                class="detail-button-image"
+                src="assets/img/sec-detail-button.webp"
+                alt=""
+                width="286"
+                height="73"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="chat-result-pilatesk">
+      <div class="chat-result-wrapper hidden">
+        <section class="lead-section-wrapper">
+          <div class="lead-section-container">
+            <img class="lead-image" src="assets/img/sec-lead.webp" alt="" width="375" height="158" />
+          </div>
+        </section>
+  
+        <section class="result-section-wrapper">
+          <div class="result-section-container">
+            <img
+              class="result-section-container-item"
+              src="assets/img/sec-result.webp"
+              alt=""
+              width="642"
+              height="978"
+            />
+            <div class="result-image-fade-container result-section-container-item ">
+              <div class="result-image-fade-container-item result-image-fade-item">
+                <img
+                  class="result-image-fade"
+                  src="assets/img/sec-result-studio-image1.webp"
+                  alt=""
+                  width="343"
+                  height="160"
+                />
               </div>
-              <div class="detail-shop-row">
-                <div class="detail-shop-row-header">
-                  <p>体験料金</p>
-                </div>
-                <div class="detail-shop-row-data">
-                  <p>¥0 / 手ぶらOK</p>
-                </div>
+              <div class="result-image-fade-container-item result-image-fade-item">
+                <img
+                  class="result-image-fade"
+                  src="assets/img/sec-result-studio-image2.webp"
+                  alt=""
+                  width="343"
+                  height="160"
+                />
               </div>
-              <div class="detail-shop-row">
-                <div class="detail-shop-row-header">
-                  <p>月額料金</p>
-                </div>
-                <div class="detail-shop-row-data">
-                  <p>
-                    ¥8,910(税込) 〜 ¥10,010(税込)
-                    <br />
-                    <span class="detail-shop-row-notes">*毎月4回のレッスン受講が可能</span>
-                  </p>
-                </div>
-              </div>
-              <div class="detail-shop-row">
-                <div class="detail-shop-row-header">
-                  <p>入会金</p>
-                </div>
-                <div class="detail-shop-row-data">
-                  <p>
-                    ¥11,330(税込)
-                    <br />
-                    <span class="detail-shop-row-breakdown">
-                      [内訳]
-                      <br />
-                      入会金：¥1,100 登録料：¥2,530
-                      <br />
-                      施設利用料：¥2,530　事務手数料：¥5,170
-                    </span>
-                  </p>
-                </div>
+              <div class="result-image-fade-container-item result-image-fade-item">
+                <img
+                  class="result-image-fade"
+                  src="assets/img/sec-result-studio-image3.webp"
+                  alt=""
+                  width="343"
+                  height="160"
+                />
               </div>
             </div>
           </div>
-        </article>
-        <div class="detail-banner">
-          <img
-            class="detail-banner-image"
-            src="assets/img/sec-detail-banner.png"
-            alt=""
-            width="335"
-            height="113"
-          />
-        </div>
-        <div class="detail-button-area">
-          <div class="detail-button-text-container">
-            <img src="assets/img/sec-detail-left.svg" alt="" width="20" height="37" />
-            <p class="detail-button-search">
-              お近くのスタジオを探すならこちら
-              <br />
-              <span class="detail-button-campaign">限定キャンペーン</span>も実施中
-            </p>
-            <img src="assets/img/sec-detail-right.svg" alt="" width="21" height="37" />
+        </section>
+    
+        <section class="what-section-wrapper">
+          <div class="what-section-container">
+            <img
+              class="what-section-container-item"
+              src="assets/img/sec-what.webp"
+              alt=""
+              width="563"
+              height="768"
+            />
+            <div class="what-header what-section-container-item">
+              <div class="what-header-title">
+                <h3>＋＋＋＋＋＋ピラティスK＋＋＋＋＋＋</h3>
+              </div>
+              <p class="what-explanation">室温38℃、湿度65%で行うヨガです。</p>
+            </div>
+    
+            <div class="what-section-container-item">
+              <p class="what-detail">
+                温度と湿度が絶妙なバランスに保たれた環境で、ゆったり動き、ポーズをとることにより、やせる、
+                きれいになる効果を最大限に引き出します。
+              </p>
+            </div>
           </div>
-          <img
-            class="detail-button-image"
-            src="assets/img/sec-detail-button.webp"
-            alt=""
-            width="286"
-            height="73"
-          />
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
 
     <script
       defer
