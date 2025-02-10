@@ -54,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-top: 12px;
 }
 
 .chat-list-item {
