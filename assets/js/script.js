@@ -22,22 +22,22 @@ function showQ1ChatList() {
   const q1ChatMessageContainerElementList = q1Element.querySelectorAll('.chat-message-container');
 
   q1ChatListItemElementList.forEach((listItem, index) => {
-    setTimeout(function () {
-      setTimeout(function () {
+    setTimeout(() => {
+      setTimeout(() => {
         listItem.classList.remove('hidden');
         q1ChatAdvisorElementList[index].classList.remove('hidden');
       }, 300);
 
       let q1ChatMessageContainerElement = q1ChatMessageContainerElementList[index];
       let ChatDotContainerElement = createChatDotContainer();
-      setTimeout(function () {
+      setTimeout(() => {
         q1ChatMessageContainerElement.parentNode.insertBefore(
           ChatDotContainerElement,
           q1ChatMessageContainerElement,
         );
       }, 500);
 
-      setTimeout(function () {
+      setTimeout(() => {
         ChatDotContainerElement.remove();
         q1ChatMessageContainerElementList[index].classList.remove('hidden');
       }, 1000);
@@ -52,22 +52,22 @@ function showQ2ChatList() {
   const q2ChatMessageContainerElementList = q2Element.querySelectorAll('.chat-message-container');
 
   q2ChatListItemElementList.forEach((listItem, index) => {
-    setTimeout(function () {
-      setTimeout(function () {
+    setTimeout(() => {
+      setTimeout(() => {
         listItem.classList.remove('hidden');
         q2ChatAdvisorElementList[index].classList.remove('hidden');
       }, 300);
 
       let q2ChatMessageContainerElement = q2ChatMessageContainerElementList[index];
       let ChatDotContainerElement = createChatDotContainer();
-      setTimeout(function () {
+      setTimeout(() => {
         q2ChatMessageContainerElement.parentNode.insertBefore(
           ChatDotContainerElement,
           q2ChatMessageContainerElement,
         );
       }, 500);
 
-      setTimeout(function () {
+      setTimeout(() => {
         ChatDotContainerElement.remove();
         q2ChatMessageContainerElementList[index].classList.remove('hidden');
       }, 1000);
@@ -82,7 +82,7 @@ function showQ3ChatList() {
   const q3ChatMessageContainerElementList = q3Element.querySelectorAll('.chat-message-container');
 
   q3ChatListItemElementList.forEach((listItem, index) => {
-    setTimeout(function () {
+    setTimeout(() => {
       setTimeout(function () {
         listItem.classList.remove('hidden');
         q3ChatAdvisorElementList[index].classList.remove('hidden');
@@ -90,14 +90,14 @@ function showQ3ChatList() {
 
       let q3ChatMessageContainerElement = q3ChatMessageContainerElementList[index];
       let ChatDotContainerElement = createChatDotContainer();
-      setTimeout(function () {
+      setTimeout(() => {
         q3ChatMessageContainerElement.parentNode.insertBefore(
           ChatDotContainerElement,
           q3ChatMessageContainerElement,
         );
       }, 500);
 
-      setTimeout(function () {
+      setTimeout(() => {
         ChatDotContainerElement.remove();
         q3ChatMessageContainerElementList[index].classList.remove('hidden');
       }, 1000);
