@@ -6,12 +6,78 @@ const q1ChatListDietElement = document.getElementById('chat-list-diet');
 q1ChatRefreshButtonElement.addEventListener('click', () => {
   q1ChatListRefreshElement.classList.remove('hidden');
   q1ChatDietButtonElement.disabled = true;
+  showChatList('q2');
 });
 
 q1ChatDietButtonElement.addEventListener('click', () => {
   q1ChatListDietElement.classList.remove('hidden');
   q1ChatRefreshButtonElement.disabled = true;
+  showChatList('q3');
 });
+
+const resultLolveButtonElement = document.getElementById('result-lolve-button');
+resultLolveButtonElement.addEventListener('click', () => {
+  const resultLolveElement = document.getElementById('chat-result-lolve');
+  showChatResult(resultLolveElement);
+});
+
+const resultPilateskButtonElement = document.getElementById('result-pilatesk-button');
+resultPilateskButtonElement.addEventListener('click', () => {
+  const resultPilateskElement = document.getElementById('chat-result-pilatesk');
+  showChatResult(resultPilateskElement);
+});
+
+function showChatList(targetId) {
+  const targetElement = document.getElementById(targetId);
+  const chatListItemElementList = targetElement.querySelectorAll('.chat-list-item');
+  const chatAdvisorElementList = targetElement.querySelectorAll('.chat-advisor');
+  const chatMessageContainerElementList = targetElement.querySelectorAll('.chat-message-container');
+
+  chatListItemElementList.forEach((listItem, index) => {
+    setTimeout(() => {
+      setTimeout(() => {
+        listItem.classList.remove('hidden');
+        chatAdvisorElementList[index].classList.remove('hidden');
+      }, 300);
+
+      let chatMessageContainerElement = chatMessageContainerElementList[index];
+      let ChatDotContainerElement = createChatDotContainer();
+      setTimeout(() => {
+        chatMessageContainerElement.parentNode.insertBefore(
+          ChatDotContainerElement,
+          chatMessageContainerElement,
+        );
+      }, 500);
+
+      setTimeout(() => {
+        ChatDotContainerElement.remove();
+        chatMessageContainerElementList[index].classList.remove('hidden');
+      }, 1000);
+    }, index * 1500);
+  });
+}
+
+function createChatDotContainer() {
+  const chatDotContainer = document.createElement('div');
+  chatDotContainer.classList.add('chat-dot-container');
+
+  const chatDotFlame = document.createElement('div');
+  chatDotFlame.classList.add('chat-dot-flame');
+
+  [...Array(3)].forEach(() => {
+    const chatDot = document.createElement('div');
+    chatDot.classList.add('chat-dot');
+    chatDotFlame.append(chatDot);
+  });
+
+  chatDotContainer.append(chatDotFlame);
+  return chatDotContainer;
+}
+
+function showChatResult(targetElement) {
+  const resultElement = targetElement.querySelector('.chat-result-wrapper');
+  resultElement.classList.remove('hidden');
+}
 
 const programCardSlideElement = document.querySelector('.program-card-slide');
 const programLessonCardSlideElement = document.querySelector('.program-lesson-card-slide');
@@ -32,5 +98,6 @@ const programLessonCardSplide = new Splide(programLessonCardSlideElement, {
   pagination: false,
 });
 
+showChatList('q1');
 programCardSplide.mount();
 programLessonCardSplide.mount();
