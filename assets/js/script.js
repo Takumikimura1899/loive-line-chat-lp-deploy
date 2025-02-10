@@ -47,22 +47,18 @@ function showChatList(targetId) {
 
 function createChatDotContainer() {
   const chatDotContainer = document.createElement('div');
-  const chatDotFlame = document.createElement('div');
-  const chatDot1 = document.createElement('div');
-  const chatDot2 = document.createElement('div');
-  const chatDot3 = document.createElement('div');
-
   chatDotContainer.classList.add('chat-dot-container');
+
+  const chatDotFlame = document.createElement('div');
   chatDotFlame.classList.add('chat-dot-flame');
-  chatDot1.classList.add('chat-dot');
-  chatDot2.classList.add('chat-dot');
-  chatDot3.classList.add('chat-dot');
+
+  [...Array(3)].forEach(() => {
+    const chatDot = document.createElement('div');
+    chatDot.classList.add('chat-dot');
+    chatDotFlame.append(chatDot);
+  });
 
   chatDotContainer.append(chatDotFlame);
-  chatDotFlame.append(chatDot1);
-  chatDotFlame.append(chatDot2);
-  chatDotFlame.append(chatDot3);
-
   return chatDotContainer;
 }
 
