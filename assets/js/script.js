@@ -1,18 +1,16 @@
-// Button
-const chatRefreshButtonElement = document.querySelector('#chat-refresh-button');
-const chatDietButtonElement = document.querySelector('#chat-diet-button');
+const q1ChatRefreshButtonElement = document.querySelector('#chat-refresh-button');
+const q1ChatDietButtonElement = document.querySelector('#chat-diet-button');
+const q1ChatListRefreshElement = document.querySelector('#chat-list-refresh');
+const q1ChatListDietElement = document.querySelector('#chat-list-diet');
 
-// ChatList
-const chatListRefreshElement = document.querySelector('#chat-list-refresh');
-const chatListDietElement = document.querySelector('#chat-list-diet');
-
-// ButtonEvent
-chatRefreshButtonElement.addEventListener('click', () => {
-  chatListRefreshElement.classList.remove('hidden');
+q1ChatRefreshButtonElement.addEventListener('click', () => {
+  q1ChatListRefreshElement.classList.remove('hidden');
+  q1ChatDietButtonElement.disabled = true;
 });
 
-chatDietButtonElement.addEventListener('click', () => {
-  chatListDietElement.classList.remove('hidden');
+q1ChatDietButtonElement.addEventListener('click', () => {
+  q1ChatListDietElement.classList.remove('hidden');
+  q1ChatRefreshButtonElement.disabled = true;
 });
 
 const programCardSlideElement = document.querySelector('.program-card-slide');
