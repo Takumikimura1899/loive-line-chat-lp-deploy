@@ -1,5 +1,3 @@
-showQ1ChatList();
-
 const q1ChatRefreshButtonElement = document.getElementById('chat-refresh-button');
 const q1ChatDietButtonElement = document.getElementById('chat-diet-button');
 const q1ChatListRefreshElement = document.getElementById('chat-list-refresh');
@@ -147,5 +145,6 @@ const programLessonCardSplide = new Splide(programLessonCardSlideElement, {
   pagination: false,
 });
 
+showQ1ChatList();
 programCardSplide.mount();
 programLessonCardSplide.mount();
