@@ -79,25 +79,33 @@ function showChatResult(targetElement) {
   resultElement.classList.remove('hidden');
 }
 
-const programCardSlideElement = document.querySelector('.program-card-slide');
-const programLessonCardSlideElement = document.querySelector('.program-lesson-card-slide');
+function programCardSplide(targetId) {
+  const targetElement = document.getElementById(targetId);
+  const programCardSlideElement = targetElement.querySelector('.program-card-slide');
+  return new Splide(programCardSlideElement, {
+    perPage: 1,
+    type: 'loop',
+    padding: '4rem',
+    gap: '0.6rem',
+    arrows: false,
+    pagination: false,
+  });
+}
 
-const programCardSplide = new Splide(programCardSlideElement, {
-  perPage: 1,
-  type: 'loop',
-  padding: '4rem',
-  gap: '0.6rem',
-  arrows: false,
-  pagination: false,
-});
-const programLessonCardSplide = new Splide(programLessonCardSlideElement, {
-  perPage: 1,
-  type: 'loop',
-  padding: '1rem',
-  gap: '1rem',
-  pagination: false,
-});
+function programLessonCardSplide(targetId) {
+  const targetElement = document.getElementById(targetId);
+  const programLessonCardSlideElement = targetElement.querySelector('.program-lesson-card-slide');
+  return new Splide(programLessonCardSlideElement, {
+    perPage: 1,
+    type: 'loop',
+    padding: '1rem',
+    gap: '1rem',
+    pagination: false,
+  });
+}
 
 showChatList('q1');
-programCardSplide.mount();
-programLessonCardSplide.mount();
+programCardSplide('chat-result-lolve').mount();
+programLessonCardSplide('chat-result-lolve').mount();
+programCardSplide('chat-result-pilatesk').mount();
+programLessonCardSplide('chat-result-pilatesk').mount();

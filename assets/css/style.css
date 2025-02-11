@@ -10,6 +10,7 @@
   --color-button-text-gray: #b1b7ba;
   --color-orange: #f81;
   --color-orange-text: #ff831c;
+  --color-blue-text: #0071b2;
   --color-green: #2e9511;
   --color-brown: #79430030;
   --color-dark-brown: #945b0040;
@@ -279,8 +280,15 @@ body {
   margin: auto auto 18%;
   font-size: 14px;
   font-weight: 500;
-  color: var(--color-orange-text);
   text-align: justify;
+}
+
+.what-detail-lolve {
+  color: var(--color-orange-text);
+}
+
+.what-detail-pilatesk {
+  color: var(--color-blue-text);
 }
 
 .program-section-container {
@@ -426,7 +434,7 @@ body {
   justify-content: center;
 }
 
-.detail-rental-list {
+.detail-rental {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 500;
@@ -512,7 +520,8 @@ body {
 }
 
 .detail-shop-row-notes {
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .detail-shop-row-breakdown {
