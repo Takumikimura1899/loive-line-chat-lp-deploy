@@ -11,6 +11,7 @@
   --color-orange: #f81;
   --color-orange-text: #ff831c;
   --color-blue-text: #0071b2;
+  --color-brown-text: #9c2401;
   --color-green: #2e9511;
   --color-brown: #79430030;
   --color-dark-brown: #945b0040;
@@ -289,6 +290,10 @@ body {
 
 .what-detail-pilatesk {
   color: var(--color-blue-text);
+}
+
+.what-detail-radysgym {
+  color: var(--color-brown-text);
 }
 
 .program-section-container {
