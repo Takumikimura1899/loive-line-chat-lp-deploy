@@ -350,9 +350,16 @@ body {
 }
 
 .program-lesson-card-title-container {
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
   margin-top: 32px;
   overflow: hidden;
+}
+
+.program-lesson-card-title-container-item {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .program-lesson-card-title {
@@ -362,6 +369,10 @@ body {
   text-align: center;
   white-space: nowrap;
   transform: translateX(-3%);
+}
+
+.program-lesson-card {
+  margin: -4% auto auto;
 }
 
 .program-lesson-card-list {
