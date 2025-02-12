@@ -350,18 +350,18 @@ body {
 }
 
 .program-lesson-card-title-container {
+  width: 100%;
   margin-top: 32px;
+  overflow: hidden;
 }
 
 .program-lesson-card-title {
-  width: calc(100% + 14px);
-  margin-right: -7px;
-  margin-left: -7px;
-  overflow: hidden;
-  font-size: 3rem;
+  font-size: clamp(3.1rem, -0.05rem + 13.44vw, 4.15rem);
   font-weight: 400;
   color: var(--color-black33);
   text-align: center;
+  white-space: nowrap;
+  transform: translateX(-3%);
 }
 
 .program-lesson-card-list {
