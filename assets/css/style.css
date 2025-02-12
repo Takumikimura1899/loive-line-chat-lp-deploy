@@ -296,10 +296,6 @@ body {
   color: var(--color-brown-text);
 }
 
-.program-section-wrapper {
-  overflow: hidden;
-}
-
 .program-section-container {
   padding-bottom: 40px;
   background-color: var(--color-white);
@@ -309,11 +305,6 @@ body {
   width: 90%;
   height: auto;
   margin: auto;
-}
-
-.program-card-track {
-  /* box-shadow が見切れないようにするため */
-  overflow: visible !important;
 }
 
 .program-card-list-item {
@@ -358,17 +349,17 @@ body {
 }
 
 .program-lesson-card-title-container {
-  /* display: grid;
-  grid-template-columns: 1fr; */
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
   margin-top: 32px;
   overflow: hidden;
 }
 
-/* .program-lesson-card-title-container-item {
+.program-lesson-card-title-container-item {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
-} */
+}
 
 .program-lesson-card-title {
   font-size: clamp(3.1rem, -0.05rem + 13.44vw, 4.15rem);
@@ -609,5 +600,4 @@ body {
 
 .hidden {
   display: none;
-}
 }
