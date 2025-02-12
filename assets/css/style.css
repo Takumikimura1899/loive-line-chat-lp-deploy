@@ -46,8 +46,7 @@ body {
 
 .chat-section-wrapper {
   min-height: 100vh;
-  padding-right: 70px;
-  padding-left: 12px;
+  padding: 0 70px 40px 12px;
   background-color: var(--color-light-blue);
 }
 
