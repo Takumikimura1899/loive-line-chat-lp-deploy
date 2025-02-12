@@ -302,16 +302,6 @@ body {
   box-shadow: 0 4px 8px 0 var(--color-brown);
 }
 
-.program-image-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.program-image-container-item {
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
-}
-
 .program-image {
   width: 90%;
   height: auto;
@@ -319,13 +309,17 @@ body {
 }
 
 .program-card-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
   width: 100%;
   height: auto;
   margin: auto;
 }
 
 .program-beginner-image {
-  margin: auto 4px 4px auto;
+  margin: -6% auto auto 96%;
 }
 
 .program-title {
