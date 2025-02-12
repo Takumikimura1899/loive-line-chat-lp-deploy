@@ -98,9 +98,11 @@ function programLessonCardSplide(targetId) {
   return new Splide(programLessonCardSlideElement, {
     perPage: 1,
     type: 'loop',
+    autoplay: 'true',
     padding: '1rem',
     gap: '1rem',
     pagination: false,
+    interval: 4000,
   });
 }
 
