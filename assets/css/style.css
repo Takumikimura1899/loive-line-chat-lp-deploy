@@ -11,6 +11,7 @@
   --color-orange: #f81;
   --color-orange-text: #ff831c;
   --color-blue-text: #0071b2;
+  --color-deep-blue-text: #0062a1;
   --color-brown-text: #9c2401;
   --color-green: #2e9511;
   --color-brown: #79430030;
@@ -294,6 +295,10 @@ body {
 
 .what-detail-radysgym {
   color: var(--color-brown-text);
+}
+
+.what-detail-surffit {
+  color: var(--color-deep-blue-text);
 }
 
 .program-section-container {
