@@ -22,16 +22,13 @@ html {
   min-width: 375px;
   max-width: 500px;
   margin: 0 auto;
-  background-color: #000;
 }
 
 body {
-  height: 100vh;
   font-family: 'Noto Sans JP', serif;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  background-color: var(--color-light-blue);
-  border: #000 solid 1px;
+  background-color: var(--color-white);
 }
 
 .header {
@@ -39,6 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 60px;
+  background-color: var(--color-light-blue);
 }
 
 .header-title {
@@ -47,15 +45,17 @@ body {
 }
 
 .chat-section-wrapper {
+  min-height: 100vh;
   padding-right: 70px;
   padding-left: 12px;
+  background-color: var(--color-light-blue);
 }
 
 .chat-list {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-top: 12px;
+  padding: 12px;
 }
 
 .chat-list-item {

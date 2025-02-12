@@ -127,23 +127,29 @@ function showChatList(targetId) {
       setTimeout(() => {
         listItem.classList.remove('hidden');
         chatAdvisorElementList[index].classList.remove('hidden');
+        scrollToLatestChat(chatAdvisorElementList[index]);
       }, 300);
 
       let chatMessageContainerElement = chatMessageContainerElementList[index];
-      let ChatDotContainerElement = createChatDotContainer();
+      let chatDotContainerElement = createChatDotContainer();
       setTimeout(() => {
         chatMessageContainerElement.parentNode.insertBefore(
-          ChatDotContainerElement,
+          chatDotContainerElement,
           chatMessageContainerElement,
         );
       }, 500);
 
       setTimeout(() => {
-        ChatDotContainerElement.remove();
+        chatDotContainerElement.remove();
         chatMessageContainerElementList[index].classList.remove('hidden');
+        scrollToLatestChat(chatMessageContainerElementList[index]);
       }, 1000);
     }, index * 1500);
   });
+}
+
+function scrollToLatestChat(targetElement) {
+  targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function createChatDotContainer() {
