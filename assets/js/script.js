@@ -114,3 +114,4 @@ showChatList('q1');
 initializeSplide('chat-result-lolve');
 initializeSplide('chat-result-pilatesk');
 initializeSplide('chat-result-radysgym');
+initializeSplide('chat-result-surffit');
