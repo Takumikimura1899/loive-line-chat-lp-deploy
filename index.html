@@ -25,173 +25,377 @@
     </header>
 
     <section class="chat-section-wrapper">
-      <div class="chat-section-container">
-        <div class="chat-list-container">
-          <ul id="q1" class="chat-list">
-            <li class="chat-list-item hidden">
-              <img
-                class="chat-advisor hidden"
-                src="assets/img/sec-chat-icon.webp"
-                alt="アドバイザー"
-                width="44"
-                height="44"
-              />
-              <div class="chat-message-container hidden">
-                <div class="chat-message-flame">
-                  <p class="chat-message">こんにちは！フィットネスアドバイザーのライフです！</p>
+      <ul id="chat-list-start" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">こんにちは！フィットネスアドバイザーのライフです！</p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">
+                運動したいけどどこがいいんだろう…？
+                <br />
+                悩むあなたにぴったりなフィットネスをご紹介しますので、
+                <br />
+                簡単なカウンセリングにご協力ください☺️
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q1</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">フィットネスを始める目的はなんですか？</p>
+                <div class="chat-question-button-area">
+                  <button id="chat-a-button" class="chat-question-button">
+                    A: 心と体をリフレッシュしたい・健康維持
+                  </button>
+                  <button id="chat-b-button" class="chat-question-button">
+                    B: 体を引き締めて変化を感じたい
+                  </button>
                 </div>
               </div>
-            </li>
-            <li class="chat-list-item hidden">
-              <img
-                class="chat-advisor hidden"
-                src="assets/img/sec-chat-icon.webp"
-                alt="アドバイザー"
-                width="44"
-                height="44"
-              />
-              <div class="chat-message-container hidden">
-                <div class="chat-message-flame">
-                  <p class="chat-message">
-                    運動したいけどどこがいいんだろう…？
-                    <br />
-                    悩むあなたにぴったりなフィットネスをご紹介しますので、
-                    <br />
-                    簡単なカウンセリングにご協力ください☺️
-                  </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="chat-list-a" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">リフレッシュって大事だよね～！</p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q2</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">ちなみに、リフレッシュするならどちらが好みですか？</p>
+                <div class="chat-question-button-area">
+                  <button id="chat-a1-button" class="chat-question-button">
+                    A1: 汗をかいてデトックスしたい
+                  </button>
+                  <button id="chat-a2-button" class="chat-question-button">
+                    A2: 美しい姿勢で心と体を整えたい
+                  </button>
                 </div>
               </div>
-            </li>
-            <li class="chat-list-item hidden">
-              <img
-                class="chat-advisor hidden"
-                src="assets/img/sec-chat-icon.webp"
-                alt="アドバイザー"
-                width="44"
-                height="44"
-              />
-              <div class="chat-message-container hidden">
-                <div class="chat-question-flame">
-                  <div class="chat-question-header">
-                    <h2 class="chat-question-header-title">Q1</h2>
-                  </div>
-                  <div class="chat-question-body">
-                    <p class="chat-message">フィットネスを始める目的はなんですか？</p>
-                    <div class="chat-question-button-area">
-                      <button id="chat-refresh-button" class="chat-question-button">
-                        リフレッシュ・健康維持
-                      </button>
-                      <button id="chat-diet-button" class="chat-question-button">
-                        体を引き締めたい
-                      </button>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="chat-list-b" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">引き締まったからだって理想だよね～！</p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q3</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">理想の体を目指す上で、どちらのスタイルが好みですか？</p>
+                <div class="chat-question-button-area">
+                  <button id="chat-b1-button" class="chat-question-button">
+                    A:音楽に合わせながら楽しく運動したい
+                  </button>
+                  <button id="chat-b2-button" class="chat-question-button">
+                    B:マシンを使って、本格的な運動をしたい
+                  </button>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
-        <div id="chat-list-refresh" class="chat-list-container hidden">
-          <ul id="q2" class="chat-list">
-            <li class="chat-list-item hidden">
-              <img
-                class="chat-advisor hidden"
-                src="assets/img/sec-chat-icon.webp"
-                alt="アドバイザー"
-                width="44"
-                height="44"
-              />
-              <div class="chat-message-container hidden">
-                <div class="chat-message-flame">
-                  <p class="chat-message">リフレッシュって大事だよね～！</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="chat-list-a1" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">
+                運動で流す汗って気持ちいよね✨
+                <br />
+                最後の質問いいですか？
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q3</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">目指したい姿ってどんなのが理想？</p>
+                <div class="chat-question-button-area">
+                  <button id="chat-a11-button" class="chat-question-button">
+                    血行促進・代謝アップで太りにくい体を目指したい
+                  </button>
+                  <button id="chat-a12-button" class="chat-question-button">
+                    心身のバランスを整え、ストレス解消したい
+                  </button>
                 </div>
               </div>
-            </li>
-            <li class="chat-list-item hidden">
-              <img
-                class="chat-advisor hidden"
-                src="assets/img/sec-chat-icon.webp"
-                alt="アドバイザー"
-                width="44"
-                height="44"
-              />
-              <div class="chat-message-container hidden">
-                <div class="chat-message-flame">
-                  <p class="chat-message">ちなみに、リフレッシュするならどちらが好みですか？</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="chat-list-a2" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">
+                姿勢を正すと心もスッキリする気がする😲✨
+                <br />
+                最後の質問いいですか？
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q3</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">目指したい姿ってどんなのが理想？</p>
+                <div class="chat-question-button-area">
+                  <button id="chat-a21-button" class="chat-question-button">
+                    骨盤の歪みやO脚を改善し、美しい姿を目指したい
+                  </button>
+                  <button id="chat-a22-button" class="chat-question-button">
+                    しなやかで女性らしいボディメイクをしたい
+                  </button>
                 </div>
               </div>
-            </li>
-            <li class="chat-list-item hidden">
-              <img
-                class="chat-advisor hidden"
-                src="assets/img/sec-chat-icon.webp"
-                alt="アドバイザー"
-                width="44"
-                height="44"
-              />
-              <div class="chat-message-container hidden">
-                <div class="chat-question-flame">
-                  <div class="chat-question-header">
-                    <h2 class="chat-question-header-title">Q2</h2>
-                  </div>
-                  <div class="chat-question-body">
-                    <p class="chat-message">リフレッシュするなら？</p>
-                    <div class="chat-question-button-area">
-                      <button id="chat-detox-button" class="chat-question-button">
-                        汗をかいてデトックス
-                      </button>
-                      <button id="chat-posture-button" class="chat-question-button">
-                        美しい姿勢で心体を整える
-                      </button>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="chat-list-b1" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">
+                リズムに合わせて体を動かすと楽しいよね😆
+                <br />
+                最後の質問いいですか？
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q3</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">目指したい姿ってどんなのが理想？</p>
+                <div class="chat-question-button-area">
+                  <button id="chat-b11-button" class="chat-question-button">
+                    体幹を鍛えて、健康的な美しさを目指したい
+                  </button>
+                  <button id="chat-b12-button" class="chat-question-button">
+                    基礎代謝をあげて太りにくい体質へ
+                  </button>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
-        <div id="chat-list-diet" class="chat-list-container hidden">
-          <ul id="q3" class="chat-list">
-            <li class="chat-list-item hidden">
-              <img
-                class="chat-advisor hidden"
-                src="assets/img/sec-chat-icon.webp"
-                alt="アドバイザー"
-                width="44"
-                height="44"
-              />
-              <div class="chat-message-container hidden">
-                <div class="chat-question-flame">
-                  <div class="chat-question-header">
-                    <h2 class="chat-question-header-title">Q3</h2>
-                  </div>
-                  <div class="chat-question-body">
-                    <p class="chat-message">目指したい姿ってどんなのが理想？</p>
-                    <div class="chat-question-button-area">
-                      <button id="result-lolve-button" class="chat-question-button">
-                        代謝アップで太りにくい体
-                      </button>
-                      <button id="result-pilatesk-button" class="chat-question-button">
-                        心身のバランスを整え、ストレスを解消
-                      </button>
-                      <button class="chat-question-button">
-                        骨盤の歪みやO脚を改善した美しい姿勢
-                      </button>
-                      <button class="chat-question-button">しなやかで女性らしいボディメイク</button>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="chat-list-b2" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">
+                やるならとことんだよね！🔥
+                <br />
+                最後の質問いいですか？
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-question-flame">
+              <div class="chat-question-header">
+                <h2 class="chat-question-header-title">Q3</h2>
+              </div>
+              <div class="chat-question-body">
+                <p class="chat-message">目指したい姿ってどんなのが理想？</p>
+                <div class="chat-question-button-area">
+                  <button id="chat-b21-button" class="chat-question-button">
+                    体幹を鍛えて、健康的な美しさを目指したい
+                  </button>
+                  <button id="chat-b22-button" class="chat-question-button">
+                    基礎代謝をあげて太りにくい体質へ
+                  </button>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="chat-list-result" class="chat-list hidden">
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p id="chat-thanks-answer" class="chat-message">質問に答えてくれてありがとう！</p>
+            </div>
+          </div>
+        </li>
+        <li class="chat-list-item hidden">
+          <img
+            class="chat-advisor hidden"
+            src="assets/img/sec-chat-icon.webp"
+            alt="アドバイザー"
+            width="44"
+            height="44"
+          />
+          <div class="chat-message-container hidden">
+            <div class="chat-message-flame">
+              <p class="chat-message">スクロールして診断結果をチェック！</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <div id="chat-result-lolve">
-      <div class="chat-result-wrapper">
-        <!-- TODO: 前レイアウト作成したら削除 -->
-        <!-- <div class="chat-result-wrapper hidden"> -->
+      <div class="chat-result-wrapper hidden">
         <section class="lead-section-wrapper">
           <div class="lead-section-container">
             <img
@@ -633,9 +837,7 @@
     </div>
 
     <div id="chat-result-pilatesk">
-      <div class="chat-result-wrapper">
-        <!-- TODO: 前レイアウト作成したら削除 -->
-        <!-- <div class="chat-result-wrapper hidden"> -->
+      <div class="chat-result-wrapper hidden">
         <section class="lead-section-wrapper">
           <div class="lead-section-container">
             <img
@@ -1034,8 +1236,7 @@
     </div>
 
     <div id="chat-result-radysgym">
-      <div class="chat-result-wrapper">
-        <!-- <div class="chat-result-wrapper hidden"> -->
+      <div class="chat-result-wrapper hidden">
         <section class="lead-section-wrapper">
           <div class="lead-section-container">
             <img
@@ -1420,8 +1621,7 @@
     </div>
 
     <div id="chat-result-surffit">
-      <div class="chat-result-wrapper">
-        <!-- <div class="chat-result-wrapper hidden"> -->
+      <div class="chat-result-wrapper hidden">
         <section class="lead-section-wrapper">
           <div class="lead-section-container">
             <img
