@@ -349,6 +349,21 @@ body {
   background-color: transparent;
 }
 
+.program-lesson-card-title-container {
+  margin-top: 32px;
+}
+
+.program-lesson-card-title {
+  width: calc(100% + 14px);
+  margin-right: -7px;
+  margin-left: -7px;
+  overflow: hidden;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color-black33);
+  text-align: center;
+}
+
 .program-lesson-card-list {
   color: var(--color-black33);
 }
