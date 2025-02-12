@@ -296,16 +296,25 @@ body {
   background-color: var(--color-white);
 }
 
+.program-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.program-card {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  margin: -23% auto auto;
+  background-color: #2e9511;
+}
+
 .program-card-list-item {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 var(--color-brown);
-}
-
-.program-image {
-  width: 90%;
-  height: auto;
-  margin: auto;
 }
 
 .program-card-image {
