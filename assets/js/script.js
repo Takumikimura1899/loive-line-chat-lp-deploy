@@ -91,7 +91,6 @@ function programCardSplide(targetId) {
     perPage: 1,
     type: 'loop',
     padding: '4rem',
-    gap: '0.6rem',
     arrows: false,
     pagination: false,
   });
@@ -114,3 +113,4 @@ function programLessonCardSplide(targetId) {
 showChatList('q1');
 initializeSplide('chat-result-lolve');
 initializeSplide('chat-result-pilatesk');
+initializeSplide('chat-result-radysgym');

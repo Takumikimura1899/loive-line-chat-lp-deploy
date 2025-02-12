@@ -11,6 +11,7 @@
   --color-orange: #f81;
   --color-orange-text: #ff831c;
   --color-blue-text: #0071b2;
+  --color-brown-text: #9c2401;
   --color-green: #2e9511;
   --color-brown: #79430030;
   --color-dark-brown: #945b0040;
@@ -291,6 +292,10 @@ body {
   color: var(--color-blue-text);
 }
 
+.what-detail-radysgym {
+  color: var(--color-brown-text);
+}
+
 .program-section-container {
   padding-bottom: 40px;
   background-color: var(--color-white);
@@ -303,16 +308,17 @@ body {
 }
 
 .program-card-list-item {
+  padding: 10px 5px;
+}
+
+.program-card-list-item-container {
+  height: 100%;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 var(--color-brown);
 }
 
 .program-card-image {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
   width: 100%;
   height: auto;
   margin: auto;
@@ -344,16 +350,9 @@ body {
 }
 
 .program-lesson-card-title-container {
-  display: grid;
-  grid-template-columns: 1fr;
   width: 100%;
   margin-top: 32px;
   overflow: hidden;
-}
-
-.program-lesson-card-title-container-item {
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
 }
 
 .program-lesson-card-title {
