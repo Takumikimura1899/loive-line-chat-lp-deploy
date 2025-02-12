@@ -91,7 +91,6 @@ function programCardSplide(targetId) {
     perPage: 1,
     type: 'loop',
     padding: '4rem',
-    gap: '0.6rem',
     arrows: false,
     pagination: false,
   });

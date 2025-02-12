@@ -308,6 +308,11 @@ body {
 }
 
 .program-card-list-item {
+  padding: 10px 5px;
+}
+
+.program-card-list-item-container {
+  height: 100%;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 var(--color-brown);
