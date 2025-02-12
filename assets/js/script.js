@@ -172,7 +172,9 @@ function createChatDotContainer() {
 function showChatResult(targetId) {
   const targetElement = document.getElementById(targetId);
   const resultElement = targetElement.querySelector('.chat-result-wrapper');
-  resultElement.classList.remove('hidden');
+  setTimeout(() => {
+    resultElement.classList.remove('hidden');
+  }, 3000);
 }
 
 function initializeSplide(targetId) {
