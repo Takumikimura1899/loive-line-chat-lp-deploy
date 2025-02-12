@@ -79,6 +79,11 @@ function showChatResult(targetElement) {
   resultElement.classList.remove('hidden');
 }
 
+function initializeSplide(targetId) {
+  programCardSplide(targetId).mount();
+  programLessonCardSplide(targetId).mount();
+}
+
 function programCardSplide(targetId) {
   const targetElement = document.getElementById(targetId);
   const programCardSlideElement = targetElement.querySelector('.program-card-slide');
@@ -107,7 +112,5 @@ function programLessonCardSplide(targetId) {
 }
 
 showChatList('q1');
-programCardSplide('chat-result-lolve').mount();
-programLessonCardSplide('chat-result-lolve').mount();
-programCardSplide('chat-result-pilatesk').mount();
-programLessonCardSplide('chat-result-pilatesk').mount();
+initializeSplide('chat-result-lolve');
+initializeSplide('chat-result-pilatesk');
