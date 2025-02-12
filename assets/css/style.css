@@ -10,6 +10,7 @@
   --color-button-text-gray: #b1b7ba;
   --color-orange: #f81;
   --color-orange-text: #ff831c;
+  --color-blue-text: #0071b2;
   --color-green: #2e9511;
   --color-brown: #79430030;
   --color-dark-brown: #945b0040;
@@ -276,32 +277,23 @@ body {
 
 .what-detail {
   width: 89%;
-  margin: auto auto 20%;
+  margin: auto auto 18%;
   font-size: 14px;
   font-weight: 500;
-  color: var(--color-orange-text);
   text-align: justify;
+}
+
+.what-detail-lolve {
+  color: var(--color-orange-text);
+}
+
+.what-detail-pilatesk {
+  color: var(--color-blue-text);
 }
 
 .program-section-container {
   padding-bottom: 40px;
   background-color: var(--color-white);
-}
-
-.program-card-list-item {
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 var(--color-brown);
-}
-
-.program-image-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.program-image-container-item {
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
 }
 
 .program-image {
@@ -310,14 +302,24 @@ body {
   margin: auto;
 }
 
+.program-card-list-item {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 var(--color-brown);
+}
+
 .program-card-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
   width: 100%;
   height: auto;
   margin: auto;
 }
 
 .program-beginner-image {
-  margin: auto 4px 4px auto;
+  margin: -6% auto auto 96%;
 }
 
 .program-title {
@@ -339,6 +341,32 @@ body {
 .program-lesson-arrow {
   margin: 22% -1%;
   background-color: transparent;
+}
+
+.program-lesson-card-title-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.program-lesson-card-title-container-item {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.program-lesson-card-title {
+  font-size: clamp(3.1rem, -0.05rem + 13.44vw, 4.15rem);
+  font-weight: 400;
+  color: var(--color-black33);
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-3%);
+}
+
+.program-lesson-card {
+  margin: -4% auto auto;
 }
 
 .program-lesson-card-list {
@@ -426,7 +454,7 @@ body {
   justify-content: center;
 }
 
-.detail-rental-list {
+.detail-rental {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 500;
@@ -512,7 +540,8 @@ body {
 }
 
 .detail-shop-row-notes {
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .detail-shop-row-breakdown {
