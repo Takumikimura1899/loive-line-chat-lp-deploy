@@ -1,31 +1,119 @@
-const q1ChatRefreshButtonElement = document.getElementById('chat-refresh-button');
-const q1ChatDietButtonElement = document.getElementById('chat-diet-button');
-const q1ChatListRefreshElement = document.getElementById('chat-list-refresh');
-const q1ChatListDietElement = document.getElementById('chat-list-diet');
+/* Q1 */
+const chatAButtonElement = document.getElementById('chat-a-button');
+const chatBButtonElement = document.getElementById('chat-b-button');
 
-q1ChatRefreshButtonElement.addEventListener('click', () => {
-  q1ChatListRefreshElement.classList.remove('hidden');
-  q1ChatDietButtonElement.disabled = true;
-  showChatList('q2');
+chatAButtonElement.addEventListener('click', () => {
+  chatBButtonElement.disabled = true;
+  showChatList('chat-list-a');
 });
 
-q1ChatDietButtonElement.addEventListener('click', () => {
-  q1ChatListDietElement.classList.remove('hidden');
-  q1ChatRefreshButtonElement.disabled = true;
-  showChatList('q3');
+chatBButtonElement.addEventListener('click', () => {
+  chatAButtonElement.disabled = true;
+  showChatList('chat-list-b');
 });
 
-const resultLolveButtonElement = document.getElementById('result-lolve-button');
-resultLolveButtonElement.addEventListener('click', () => {
-  const resultLolveElement = document.getElementById('chat-result-lolve');
-  showChatResult(resultLolveElement);
+/* Q2 */
+const chatA1ButtonElement = document.getElementById('chat-a1-button');
+const chatA2ButtonElement = document.getElementById('chat-a2-button');
+const chatB1ButtonElement = document.getElementById('chat-b1-button');
+const chatB2ButtonElement = document.getElementById('chat-b2-button');
+
+chatA1ButtonElement.addEventListener('click', () => {
+  chatA2ButtonElement.disabled = true;
+  showChatList('chat-list-a1');
 });
 
-const resultPilateskButtonElement = document.getElementById('result-pilatesk-button');
-resultPilateskButtonElement.addEventListener('click', () => {
-  const resultPilateskElement = document.getElementById('chat-result-pilatesk');
-  showChatResult(resultPilateskElement);
+chatA2ButtonElement.addEventListener('click', () => {
+  chatA1ButtonElement.disabled = true;
+  showChatList('chat-list-a2');
 });
+
+chatB1ButtonElement.addEventListener('click', () => {
+  chatB2ButtonElement.disabled = true;
+  showChatList('chat-list-b1');
+});
+
+chatB2ButtonElement.addEventListener('click', () => {
+  chatB1ButtonElement.disabled = true;
+  showChatList('chat-list-b2');
+});
+
+/* Q3 */
+const chatA11ButtonElement = document.getElementById('chat-a11-button');
+const chatA12ButtonElement = document.getElementById('chat-a12-button');
+const chatA21ButtonElement = document.getElementById('chat-a21-button');
+const chatA22ButtonElement = document.getElementById('chat-a22-button');
+const chatB11ButtonElement = document.getElementById('chat-b11-button');
+const chatB12ButtonElement = document.getElementById('chat-b12-button');
+const chatB21ButtonElement = document.getElementById('chat-b21-button');
+const chatB22ButtonElement = document.getElementById('chat-b22-button');
+const chatListResultElement = document.getElementById('chat-list-result');
+const chatA1TextElement = '<br />汗を流して心身共にリフレッシュしたいあなたには…';
+const chatA2TextElement = '<br />しなやかな美しいボディラインを目指すあなたには…';
+const chatB1TextElement = '<br />最新エクササイズで健康美を目指すあなたには…';
+const chatB2TextElement = '<br />自分史上最高の引き締まったボディライン目指すあなたには…';
+
+chatA11ButtonElement.addEventListener('click', () => {
+  chatA12ButtonElement.disabled = true;
+  addChatText(chatA1TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-lolve');
+});
+
+chatA12ButtonElement.addEventListener('click', () => {
+  chatA12ButtonElement.disabled = true;
+  addChatText(chatA1TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-lolve');
+});
+
+chatA21ButtonElement.addEventListener('click', () => {
+  chatA22ButtonElement.disabled = true;
+  addChatText(chatA2TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-pilatesk');
+});
+
+chatA22ButtonElement.addEventListener('click', () => {
+  chatA21ButtonElement.disabled = true;
+  addChatText(chatA2TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-pilatesk');
+});
+
+chatB11ButtonElement.addEventListener('click', () => {
+  chatB12ButtonElement.disabled = true;
+  addChatText(chatB1TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-surffit');
+});
+
+chatB12ButtonElement.addEventListener('click', () => {
+  chatB11ButtonElement.disabled = true;
+  addChatText(chatB1TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-surffit');
+});
+
+chatB21ButtonElement.addEventListener('click', () => {
+  chatB22ButtonElement.disabled = true;
+  addChatText(chatB2TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-radysgym');
+});
+
+chatB22ButtonElement.addEventListener('click', () => {
+  chatB21ButtonElement.disabled = true;
+  addChatText(chatB2TextElement);
+  showChatList('chat-list-result');
+  showChatResult('chat-result-radysgym');
+});
+
+/* function */
+function addChatText(targetText) {
+  const chatThanksAnswerElement = document.getElementById('chat-thanks-answer');
+  chatThanksAnswerElement.innerHTML += targetText;
+}
 
 function showChatList(targetId) {
   const targetElement = document.getElementById(targetId);
@@ -33,28 +121,35 @@ function showChatList(targetId) {
   const chatAdvisorElementList = targetElement.querySelectorAll('.chat-advisor');
   const chatMessageContainerElementList = targetElement.querySelectorAll('.chat-message-container');
 
+  targetElement.classList.remove('hidden');
   chatListItemElementList.forEach((listItem, index) => {
     setTimeout(() => {
       setTimeout(() => {
         listItem.classList.remove('hidden');
         chatAdvisorElementList[index].classList.remove('hidden');
+        scrollToLatestChat(chatAdvisorElementList[index]);
       }, 300);
 
       let chatMessageContainerElement = chatMessageContainerElementList[index];
-      let ChatDotContainerElement = createChatDotContainer();
+      let chatDotContainerElement = createChatDotContainer();
       setTimeout(() => {
         chatMessageContainerElement.parentNode.insertBefore(
-          ChatDotContainerElement,
+          chatDotContainerElement,
           chatMessageContainerElement,
         );
       }, 500);
 
       setTimeout(() => {
-        ChatDotContainerElement.remove();
+        chatDotContainerElement.remove();
         chatMessageContainerElementList[index].classList.remove('hidden');
+        scrollToLatestChat(chatMessageContainerElementList[index]);
       }, 1000);
     }, index * 1500);
   });
+}
+
+function scrollToLatestChat(targetElement) {
+  targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function createChatDotContainer() {
@@ -74,9 +169,12 @@ function createChatDotContainer() {
   return chatDotContainer;
 }
 
-function showChatResult(targetElement) {
+function showChatResult(targetId) {
+  const targetElement = document.getElementById(targetId);
   const resultElement = targetElement.querySelector('.chat-result-wrapper');
-  resultElement.classList.remove('hidden');
+  setTimeout(() => {
+    resultElement.classList.remove('hidden');
+  }, 3000);
 }
 
 function initializeSplide(targetId) {
@@ -110,7 +208,7 @@ function programLessonCardSplide(targetId) {
   });
 }
 
-showChatList('q1');
+showChatList('chat-list-start');
 initializeSplide('chat-result-lolve');
 initializeSplide('chat-result-pilatesk');
 initializeSplide('chat-result-radysgym');
