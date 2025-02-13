@@ -465,6 +465,7 @@ body {
 
 .detail-rental-contents {
   display: flex;
+  gap: 15px;
   align-items: center;
   justify-content: center;
 }
@@ -473,6 +474,19 @@ body {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.detail-rental-list-item {
+  position: relative;
+}
+
+.detail-rental-list-item::before {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  font-size: 4px;
+  content: '●';
+  transform: translateY(-50%);
 }
 
 .detail-shop-card {
