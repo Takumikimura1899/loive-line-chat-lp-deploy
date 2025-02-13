@@ -334,14 +334,21 @@ body {
   box-shadow: 0 4px 8px 0 var(--color-brown);
 }
 
+.program-card-image-container {
+  position: relative;
+}
+
 .program-card-image {
+  display: block;
   width: 100%;
   height: auto;
   margin: auto;
 }
 
 .program-beginner-image {
-  margin: -6% auto auto 96%;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
 }
 
 .program-title {
