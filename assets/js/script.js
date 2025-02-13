@@ -85,28 +85,28 @@ chatB11ButtonElement.addEventListener('click', () => {
   chatB12ButtonElement.disabled = true;
   addChatText(chatB1TextElement);
   showChatList('chat-list-result');
-  showChatResult('chat-result-radysgym');
+  showChatResult('chat-result-surffit');
 });
 
 chatB12ButtonElement.addEventListener('click', () => {
   chatB11ButtonElement.disabled = true;
   addChatText(chatB1TextElement);
   showChatList('chat-list-result');
-  showChatResult('chat-result-radysgym');
+  showChatResult('chat-result-surffit');
 });
 
 chatB21ButtonElement.addEventListener('click', () => {
   chatB22ButtonElement.disabled = true;
   addChatText(chatB2TextElement);
   showChatList('chat-list-result');
-  showChatResult('chat-result-surffit');
+  showChatResult('chat-result-radysgym');
 });
 
 chatB22ButtonElement.addEventListener('click', () => {
   chatB21ButtonElement.disabled = true;
   addChatText(chatB2TextElement);
   showChatList('chat-list-result');
-  showChatResult('chat-result-surffit');
+  showChatResult('chat-result-radysgym');
 });
 
 /* function */
