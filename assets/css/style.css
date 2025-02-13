@@ -50,6 +50,10 @@ body {
   background-color: var(--color-light-blue);
 }
 
+#chat-list-start {
+  padding-top: 40px;
+}
+
 .chat-list {
   display: flex;
   flex-direction: column;
