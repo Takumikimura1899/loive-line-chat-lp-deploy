@@ -313,7 +313,7 @@ body {
 }
 
 .program-section-container {
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   background-color: var(--color-white);
 }
 
@@ -447,15 +447,14 @@ body {
 .detail-rental-card {
   width: 89%;
   height: auto;
-  margin: 80% 20px auto;
+  margin: 67% auto auto;
   color: var(--color-black33);
   background-color: var(--color-white);
   border-radius: 8px;
 }
 
 .detail-rental-card-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .detail-rental-title {
@@ -469,9 +468,16 @@ body {
   gap: 15px;
   align-items: center;
   justify-content: center;
+  margin-top: 8px;
 }
 
 .detail-rental {
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.detail-rental-list {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 500;
@@ -479,6 +485,7 @@ body {
 
 .detail-rental-list-item {
   position: relative;
+  margin: 3px 0;
 }
 
 .detail-rental-list-item::before {
