@@ -5,6 +5,7 @@
   --color-light-gray: #f7f7fb;
   --color-gray: #d9d9d9;
   --color-light-blue: #a8c1ed;
+  --color-blue-alfa: #a8c1edf2;
   --color-dot-gray: #b6b6b6;
   --color-button-background-gray: #e4e8ed;
   --color-button-text-gray: #b1b7ba;
@@ -32,11 +33,14 @@ body {
 }
 
 .header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 500px;
   height: 60px;
-  background-color: var(--color-light-blue);
+  background-color: var(--color-blue-alfa);
 }
 
 .header-title {
@@ -48,6 +52,10 @@ body {
   min-height: 100vh;
   padding: 0 70px 40px 12px;
   background-color: var(--color-light-blue);
+}
+
+#chat-list-start {
+  padding-top: 100px;
 }
 
 .chat-list {
