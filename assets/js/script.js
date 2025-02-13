@@ -172,8 +172,10 @@ function createChatDotContainer() {
 function showChatResult(targetId) {
   const targetElement = document.getElementById(targetId);
   const resultElement = targetElement.querySelector('.chat-result-wrapper');
+  const leadSectionWrapperElement = document.querySelector('.lead-section-wrapper');
   const footerElement = document.querySelector('footer');
   setTimeout(() => {
+    leadSectionWrapperElement.classList.remove('hidden');
     resultElement.classList.remove('hidden');
     footerElement.classList.remove('hidden');
   }, 3000);

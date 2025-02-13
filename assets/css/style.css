@@ -185,7 +185,13 @@ body {
   background-color: var(--color-button-background-gray);
 }
 
+.lead-section-container {
+  position: relative;
+}
+
 .lead-image {
+  position: absolute;
+  z-index: 1;
   width: 100%;
   height: auto;
 }
