@@ -584,6 +584,14 @@ body {
   border-left: 1px solid var(--color-gray);
 }
 
+.detail-shop-row-explanation {
+  line-height: 1.7;
+}
+
+.detail-shop-row-tax {
+  font-size: 12px;
+}
+
 .detail-shop-row-notes {
   font-size: 10px;
   font-weight: 400;
