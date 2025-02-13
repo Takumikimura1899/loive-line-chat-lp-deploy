@@ -4,6 +4,7 @@
   --color-white: #fff;
   --color-light-gray: #f7f7fb;
   --color-gray: #d9d9d9;
+  --color-dark-gray: #999;
   --color-light-blue: #a8c1ed;
   --color-dot-gray: #b6b6b6;
   --color-button-background-gray: #e4e8ed;
@@ -603,4 +604,50 @@ body {
 
 .hidden {
   display: none;
+}
+
+footer {
+  padding-bottom: 113px;
+  color: var(--color-dark-gray);
+  text-align: center;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gray);
+}
+
+.link-list {
+  padding: 25px 20px;
+  font-family: 'Zen Kaku Gothic Antique', serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.link-list-item {
+  position: relative;
+  display: inline;
+  padding: 0 25px;
+}
+
+.link-list-item:not(:first-child)::before {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  content: '|';
+  transform: translateY(-50%);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:link,
+.link:visited,
+.link:hover,
+.link:active {
+  color: var(--color-dark-gray);
+}
+
+.copy-right {
+  font-family: Sen, serif;
+  font-size: 10px;
+  font-weight: 500;
 }
