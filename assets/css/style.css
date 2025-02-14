@@ -4,6 +4,7 @@
   --color-white: #fff;
   --color-light-gray: #f7f7fb;
   --color-gray: #d9d9d9;
+  --color-dark-gray: #999;
   --color-light-blue: #a8c1ed;
   --color-dot-gray: #b6b6b6;
   --color-button-background-gray: #e4e8ed;
@@ -184,7 +185,13 @@ body {
   background-color: var(--color-button-background-gray);
 }
 
+.lead-section-container {
+  position: relative;
+}
+
 .lead-image {
+  position: absolute;
+  z-index: 1;
   width: 100%;
   height: auto;
 }
@@ -306,7 +313,7 @@ body {
 }
 
 .program-section-container {
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   background-color: var(--color-white);
 }
 
@@ -434,20 +441,20 @@ body {
   grid-column: 1 / -1;
   width: 100%;
   height: auto;
+  margin-top: -32px;
 }
 
 .detail-rental-card {
   width: 89%;
   height: auto;
-  margin: 80% 20px auto;
+  margin: 67% auto auto;
   color: var(--color-black33);
   background-color: var(--color-white);
   border-radius: 8px;
 }
 
 .detail-rental-card-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .detail-rental-title {
@@ -458,14 +465,36 @@ body {
 
 .detail-rental-contents {
   display: flex;
+  gap: 15px;
   align-items: center;
   justify-content: center;
+  margin-top: 8px;
 }
 
 .detail-rental {
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.detail-rental-list {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.detail-rental-list-item {
+  position: relative;
+  margin: 3px 0;
+}
+
+.detail-rental-list-item::before {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  font-size: 4px;
+  content: '●';
+  transform: translateY(-50%);
 }
 
 .detail-shop-card {
@@ -603,4 +632,50 @@ body {
 
 .hidden {
   display: none;
+}
+
+footer {
+  padding-bottom: 113px;
+  color: var(--color-dark-gray);
+  text-align: center;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gray);
+}
+
+.link-list {
+  padding: 25px 20px;
+  font-family: 'Zen Kaku Gothic Antique', serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.link-list-item {
+  position: relative;
+  display: inline;
+  padding: 0 25px;
+}
+
+.link-list-item:not(:first-child)::before {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  content: '|';
+  transform: translateY(-50%);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:link,
+.link:visited,
+.link:hover,
+.link:active {
+  color: var(--color-dark-gray);
+}
+
+.copy-right {
+  font-family: Sen, serif;
+  font-size: 10px;
+  font-weight: 500;
 }
