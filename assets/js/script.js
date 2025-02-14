@@ -178,6 +178,7 @@ function showChatResult(targetId) {
     leadSectionWrapperElement.classList.remove('hidden');
     resultElement.classList.remove('hidden');
     footerElement.classList.remove('hidden');
+    initializeSplide(targetId);
   }, 3000);
 }
 
@@ -213,7 +214,3 @@ function programLessonCardSplide(targetId) {
 }
 
 showChatList('chat-list-start');
-initializeSplide('chat-result-lolve');
-initializeSplide('chat-result-pilatesk');
-initializeSplide('chat-result-radysgym');
-initializeSplide('chat-result-surffit');
