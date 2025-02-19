@@ -193,7 +193,7 @@ function initializeCTA(targetId) {
     const startRect = startElement.getBoundingClientRect();
     const endRect = endElement.getBoundingClientRect();
     const inView = startRect.top < window.innerHeight && endRect.bottom > window.innerHeight;
-    console.log(endRect.bottom);
+
     if (inView) {
       fixedButtonContainerElement.classList.remove('hidden');
     } else {

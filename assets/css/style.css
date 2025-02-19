@@ -155,7 +155,6 @@ body {
 }
 
 .chat-question-header-title {
-  font-family: Roboto, serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -330,7 +329,7 @@ body {
 }
 
 .program-card-list-item {
-  padding: 10px 5px;
+  padding: 0 5px 10px;
 }
 
 .program-card-list-item-container {
@@ -487,7 +486,7 @@ body {
 
 .detail-section-content {
   position: relative;
-  padding-top: 65%;
+  padding-top: 68%;
 }
 
 .detail-rental-card {
@@ -710,7 +709,6 @@ footer {
 
 .link-list {
   padding: 25px 20px;
-  font-family: 'Zen Kaku Gothic Antique', serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -741,7 +739,6 @@ footer {
 }
 
 .copy-right {
-  font-family: Sen, serif;
   font-size: 10px;
   font-weight: 500;
 }
