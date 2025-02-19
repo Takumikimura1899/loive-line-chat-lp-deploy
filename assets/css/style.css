@@ -2,6 +2,7 @@
   --color-black: #000;
   --color-black33: #333;
   --color-white: #fff;
+  --color-white-alfa: #ffffff4d;
   --color-light-gray: #f7f7fb;
   --color-gray: #d9d9d9;
   --color-dark-gray: #999;
@@ -614,13 +615,14 @@ body {
 
 .detail-button-area {
   padding-bottom: 80px;
-  margin: 40px 40px auto;
+  margin: 40px auto auto;
 }
 
 .detail-button-text-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .detail-button-text-icon {
@@ -641,9 +643,20 @@ body {
 }
 
 .detail-button-image {
-  width: 100%;
+  width: 76%;
   height: auto;
-  margin-top: 10px;
+  margin: auto;
+}
+
+.fixed-button-container {
+  position: fixed;
+  bottom: 0%;
+  z-index: 99;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 0;
+  background-color: var(--color-white-alfa);
+  backdrop-filter: blur(8px);
 }
 
 .hidden {
