@@ -2,6 +2,7 @@
   --color-black: #000;
   --color-black33: #333;
   --color-white: #fff;
+  --color-white-alfa: #ffffff4d;
   --color-light-gray: #f7f7fb;
   --color-gray: #d9d9d9;
   --color-dark-gray: #999;
@@ -439,11 +440,42 @@ body {
   background: linear-gradient(180deg, #ff9239 0%, #ffe992 80%, #fff 100%);
 }
 
+.detail-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 .detail-image {
   position: absolute;
   width: 100%;
   height: auto;
   margin-top: -25px;
+}
+
+.detail-image-decoration {
+  position: absolute;
+  top: clamp(110px, 30vw, 150px);
+  right: clamp(25px, 6vw, 30px);
+  width: clamp(32px, 9vw, 45px);
+  height: auto;
+  transform-origin: left;
+  animation: rotate 2s infinite;
+}
+
+.detail-image-decoration-piratesk {
+  top: clamp(105px, 29vw, 145px);
+  right: clamp(42px, 11vw, 55px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(90deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
 }
 
 .detail-section-content {
@@ -613,13 +645,14 @@ body {
 
 .detail-button-area {
   padding-bottom: 80px;
-  margin: 40px 40px auto;
+  margin: 40px auto auto;
 }
 
 .detail-button-text-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .detail-button-text-icon {
@@ -640,9 +673,20 @@ body {
 }
 
 .detail-button-image {
-  width: 100%;
+  width: 76%;
   height: auto;
-  margin-top: 10px;
+  margin: auto;
+}
+
+.fixed-button-container {
+  position: fixed;
+  bottom: 0%;
+  z-index: 99;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 0;
+  background-color: var(--color-white-alfa);
+  backdrop-filter: blur(8px);
 }
 
 .hidden {
