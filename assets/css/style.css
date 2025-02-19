@@ -441,11 +441,42 @@ body {
   background: linear-gradient(180deg, #ff9239 0%, #ffe992 80%, #fff 100%);
 }
 
+.detail-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 .detail-image {
   position: absolute;
   width: 100%;
   height: auto;
   margin-top: -25px;
+}
+
+.detail-image-decoration {
+  position: absolute;
+  top: clamp(110px, 30vw, 150px);
+  right: clamp(25px, 6vw, 30px);
+  width: clamp(32px, 9vw, 45px);
+  height: auto;
+  transform-origin: left;
+  animation: rotate 2s infinite;
+}
+
+.detail-image-decoration-piratesk {
+  top: clamp(105px, 29vw, 145px);
+  right: clamp(42px, 11vw, 55px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(90deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
 }
 
 .detail-section-content {
