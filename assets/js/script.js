@@ -213,9 +213,13 @@ function programCardSplide(targetId) {
   return new Splide(programCardSlideElement, {
     perPage: 1,
     type: 'loop',
+    autoplay: 'true',
     padding: '4rem',
     arrows: false,
+    drag: false,
+    pauseOnHover: false,
     pagination: false,
+    interval: 5000,
   });
 }
 
