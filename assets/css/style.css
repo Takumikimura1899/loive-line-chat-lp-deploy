@@ -447,6 +447,11 @@ body {
   margin-top: -25px;
 }
 
+.detail-image-decoration {
+  position: absolute;
+  right: 0;
+}
+
 .detail-section-content {
   position: relative;
   padding-top: 65%;
