@@ -289,15 +289,16 @@ body {
 
 .what-explanation {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .what-detail {
   width: 89%;
-  margin: auto auto 18%;
+  margin: auto auto 10%;
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.4;
   text-align: justify;
 }
 
@@ -363,9 +364,11 @@ body {
 }
 
 .program-summary {
-  margin-top: 2px;
+  margin-top: 3px;
   font-size: 12px;
   font-weight: 500;
+  line-height: 1.4;
+  text-align: justify;
 }
 
 .program-lesson-arrow-container {
