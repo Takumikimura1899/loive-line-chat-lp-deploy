@@ -455,8 +455,10 @@ body {
 
 .detail-image-decoration {
   position: absolute;
-  top: 10%;
-  right: 5%;
+  top: clamp(130px, 35vw, 175px);
+  right: clamp(5px, 1vw, 8px);
+  width: clamp(32px, 9vw, 45px);
+  height: auto;
   transform: translate(-50%, -50%);
 }
 
