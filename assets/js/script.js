@@ -179,7 +179,27 @@ function showChatResult(targetId) {
     resultElement.classList.remove('hidden');
     footerElement.classList.remove('hidden');
     initializeSplide(targetId);
+    initializeCTA(targetId);
   }, 3000);
+}
+
+function initializeCTA(targetId) {
+  const targetElement = document.getElementById(targetId);
+  const fixedButtonContainerElement = targetElement.querySelector('.fixed-button-container');
+  const startElement = targetElement.querySelector('.what-header');
+  const endElement = targetElement.querySelector('.detail-banner');
+
+  window.addEventListener('scroll', () => {
+    const startRect = startElement.getBoundingClientRect();
+    const endRect = endElement.getBoundingClientRect();
+    const inView = startRect.top < window.innerHeight && endRect.bottom > window.innerHeight;
+    console.log(endRect.bottom);
+    if (inView) {
+      fixedButtonContainerElement.classList.remove('hidden');
+    } else {
+      fixedButtonContainerElement.classList.add('hidden');
+    }
+  });
 }
 
 function initializeSplide(targetId) {
