@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 12px;
+  padding-top: 0.75rem;
 }
 
 .chat-list-item {
@@ -71,6 +71,9 @@ body {
 .chat-message-container {
   flex-grow: 1;
   width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 .chat-message-flame {
