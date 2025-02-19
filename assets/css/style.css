@@ -325,7 +325,7 @@ body {
 }
 
 .program-card-list-item {
-  padding: 10px 5px;
+  padding: 0 5px 10px;
 }
 
 .program-card-list-item-container {
@@ -480,7 +480,7 @@ body {
 
 .detail-section-content {
   position: relative;
-  padding-top: 65%;
+  padding-top: 68%;
 }
 
 .detail-rental-card {
