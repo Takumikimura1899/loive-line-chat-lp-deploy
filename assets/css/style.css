@@ -151,7 +151,6 @@ body {
 }
 
 .chat-question-header-title {
-  font-family: Roboto, serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -660,7 +659,6 @@ footer {
 
 .link-list {
   padding: 25px 20px;
-  font-family: 'Zen Kaku Gothic Antique', serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -691,7 +689,6 @@ footer {
 }
 
 .copy-right {
-  font-family: Sen, serif;
   font-size: 10px;
   font-weight: 500;
 }
