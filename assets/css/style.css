@@ -463,6 +463,11 @@ body {
   animation: rotate 2s infinite;
 }
 
+.detail-image-decoration-piratesk {
+  top: clamp(105px, 29vw, 145px);
+  right: clamp(42px, 11vw, 55px);
+}
+
 @keyframes rotate {
   from {
     transform: rotateY(90deg);
