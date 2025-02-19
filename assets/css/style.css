@@ -455,11 +455,10 @@ body {
 
 .detail-image-decoration {
   position: absolute;
-  top: clamp(130px, 35vw, 175px);
-  right: clamp(5px, 1vw, 8px);
+  top: clamp(110px, 30vw, 150px);
+  right: clamp(25px, 6vw, 30px);
   width: clamp(32px, 9vw, 45px);
   height: auto;
-  transform: translate(-50%, -50%);
   transform-origin: left;
   animation: rotate 2s infinite;
 }
