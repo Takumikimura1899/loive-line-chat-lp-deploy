@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 12px;
+  padding-top: 0.75rem;
 }
 
 .chat-list-item {
@@ -71,6 +71,9 @@ body {
 .chat-message-container {
   flex-grow: 1;
   width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 .chat-message-flame {
@@ -285,15 +288,16 @@ body {
 
 .what-explanation {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .what-detail {
   width: 89%;
-  margin: auto auto 18%;
+  margin: auto auto 10%;
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.4;
   text-align: justify;
 }
 
@@ -359,9 +363,11 @@ body {
 }
 
 .program-summary {
-  margin-top: 2px;
+  margin-top: 3px;
   font-size: 12px;
   font-weight: 500;
+  line-height: 1.4;
+  text-align: justify;
 }
 
 .program-lesson-arrow-container {
