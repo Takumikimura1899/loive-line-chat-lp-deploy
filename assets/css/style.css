@@ -466,7 +466,7 @@ body {
   width: clamp(32px, 9vw, 45px);
   height: auto;
   transform-origin: left;
-  animation: rotate 2s infinite;
+  animation: rotate 2.5s infinite;
 }
 
 .detail-image-decoration-piratesk {
@@ -475,11 +475,15 @@ body {
 }
 
 @keyframes rotate {
-  from {
+  0% {
     transform: rotateY(90deg);
   }
 
-  to {
+  25% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
     transform: rotateY(0deg);
   }
 }
@@ -700,7 +704,7 @@ body {
 }
 
 footer {
-  padding-bottom: 113px;
+  padding-bottom: 25px;
   color: var(--color-dark-gray);
   text-align: center;
   background-color: var(--color-white);
